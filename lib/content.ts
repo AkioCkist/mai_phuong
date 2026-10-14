@@ -102,8 +102,20 @@ export interface EventItem {
   inGallery: boolean
   period?: string
   current?: boolean
-  /** Đường dẫn ảnh thật (vd. /gallery/u-invent.jpg). Để trống sẽ hiện bìa pastel. */
-  image?: string
+  /**
+   * Ảnh album, đặt file trong /public/gallery/<id>/ (vd. /gallery/u-invent-7/01.jpg).
+   * Ảnh đầu tiên làm bìa, trừ khi có `cover`. Để trống sẽ hiện bìa pastel.
+   */
+  photos?: Photo[]
+  cover?: string
+}
+
+export interface Photo {
+  src: string
+  /** Mô tả ảnh cho người dùng trình đọc màn hình. */
+  alt?: string
+  /** Chú thích hiện dưới ảnh trong popup. */
+  caption?: string
 }
 
 export const categoryLabel: Record<EventCategory, string> = {

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { goals, stats, storyChapters } from '@/lib/content'
 import { Reveal } from './reveal'
 import { SectionHeading } from './section-heading'
+import { StickyBounce } from './sticky-bounce'
 
 export function AboutStory() {
   return (
@@ -15,7 +16,7 @@ export function AboutStory() {
         />
 
         <div className="mt-12 grid gap-12 lg:grid-cols-[300px_minmax(0,1fr)] lg:gap-16">
-          <aside className="lg:sticky lg:top-24 lg:self-start">
+          <StickyBounce className="lg:sticky lg:top-24 lg:self-start">
             <div className="relative mx-auto aspect-[4/5] max-w-xs overflow-hidden rounded-2xl bg-[#f9ecdf] lg:max-w-none">
               <Image
                 src="/images/mascot.png"
@@ -36,7 +37,7 @@ export function AboutStory() {
                 </div>
               ))}
             </dl>
-          </aside>
+          </StickyBounce>
 
           <ol className="flex flex-col">
             {storyChapters.map((chapter) => (

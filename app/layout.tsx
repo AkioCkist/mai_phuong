@@ -1,11 +1,11 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Be_Vietnam_Pro, Bricolage_Grotesque, JetBrains_Mono } from 'next/font/google'
+import { Be_Vietnam_Pro, Fraunces, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 
-const display = Bricolage_Grotesque({
+const display = Fraunces({
   subsets: ['latin', 'latin-ext', 'vietnamese'],
-  axes: ['opsz', 'wdth'],
+  axes: ['opsz', 'SOFT', 'WONK'],
   variable: '--font-display-face',
   display: 'swap',
 })

@@ -14,18 +14,19 @@ export function Hero() {
         </div>
 
         <h1 className="mt-6 font-display font-extrabold leading-[0.88] tracking-[-0.035em] text-ink [font-stretch:80%] sm:mt-8">
-          <span className="block pb-[0.06em] pt-[0.1em] [overflow-y:clip]">
-            <span className="block animate-rise text-[clamp(3.25rem,12.5vw,10rem)]">{profile.name}</span>
+          {/* font-size sits on the clipping span so its em padding leaves room for accents and descenders */}
+          <span className="-mb-[0.14em] block pb-[0.24em] pt-[0.12em] text-[clamp(3.25rem,12.5vw,10rem)] [overflow-y:clip]">
+            <span className="block animate-rise">{profile.name}</span>
           </span>
-          <span className="block pb-[0.1em] [overflow-y:clip]">
-            <span className="block animate-rise text-[clamp(1.75rem,5vw,3.5rem)] font-semibold tracking-[-0.02em] text-rose [animation-delay:120ms]">
+          <span className="block pb-[0.28em] text-[clamp(1.75rem,5vw,3.5rem)] font-semibold tracking-[-0.02em] text-rose [overflow-y:clip]">
+            <span className="block animate-rise [animation-delay:120ms]">
               hay còn gọi là {profile.nickname}
             </span>
           </span>
         </h1>
 
-        <div className="mt-10 grid items-end gap-10 lg:mt-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:gap-14">
-          <div className="animate-in fade-in slide-in-from-bottom-2 order-2 fill-mode-backwards duration-700 [animation-delay:300ms] lg:order-1">
+        <div className="mt-6 grid items-start gap-10 lg:mt-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:gap-14">
+          <div className="animate-in fade-in slide-in-from-bottom-2 order-2 fill-mode-backwards duration-700 [animation-delay:300ms] lg:order-1 lg:pt-6">
             <p className="max-w-[56ch] text-pretty text-[17px] leading-[1.75] text-ink/85">{profile.overview}</p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
