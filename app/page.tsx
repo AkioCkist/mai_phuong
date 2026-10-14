@@ -12,7 +12,7 @@ export default function Page() {
     <>
       <a
         href="#main"
-        className="sr-only z-[60] rounded-full bg-white px-4 py-2 font-bold text-rose focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
+        className="sr-only z-[60] rounded-md bg-sheet px-4 py-2 font-semibold text-rose focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
       >
         Bỏ qua điều hướng
       </a>
@@ -20,14 +20,14 @@ export default function Page() {
       <main id="main">
         <Hero />
         <Highlights />
-        <section id="about" aria-labelledby="about-title" className="scroll-mt-20">
+        <section id="about" aria-labelledby="about-title" className="scroll-mt-14">
           <AboutStory />
           <Experience />
         </section>
-        <section id="gallery" aria-labelledby="gallery-title" className="scroll-mt-20">
+        <section id="gallery" aria-labelledby="gallery-title" className="scroll-mt-14">
           <Gallery />
         </section>
-        <section id="contact" aria-labelledby="contact-title" className="scroll-mt-20">
+        <section id="contact" aria-labelledby="contact-title" className="scroll-mt-14">
           <Contact />
         </section>
       </main>

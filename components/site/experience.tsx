@@ -1,121 +1,89 @@
-import { Award, GraduationCap, Languages, Leaf, Medal, Rocket, Trophy, type LucideIcon } from 'lucide-react'
 import { achievements, certificates, events, languages } from '@/lib/content'
-import { Reveal } from './reveal'
 import { SectionHeading } from './section-heading'
-
-const achievementIcons: Record<(typeof achievements)[number]['icon'], LucideIcon> = {
-  trophy: Trophy,
-  rocket: Rocket,
-  medal: Medal,
-  graduation: GraduationCap,
-  leaf: Leaf,
-}
 
 const years = [2026, 2025, 2024] as const
 
 export function Experience() {
   return (
-    <div className="bg-gradient-to-b from-transparent via-blush to-transparent px-5 pb-24 pt-4 sm:px-8">
+    <div className="border-y border-line bg-sheet px-4 py-24 sm:px-8">
       <div className="mx-auto max-w-6xl">
-        <div className="grid gap-14 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
+        <div className="grid gap-20 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-16">
           <section aria-labelledby="exp-title">
-            <SectionHeading id="exp-title" index="03" label="Experience" description="Mới nhất ở trên cùng." />
+            <SectionHeading id="exp-title" label="Experience" title="Kinh nghiệm" description="Mới nhất ở trên cùng." />
 
-            <div className="mt-10 flex flex-col gap-10">
+            <div className="mt-10 flex flex-col gap-12">
               {years.map((year) => {
                 const items = events.filter((event) => event.year === year).reverse()
                 return (
-                  <Reveal key={year}>
-                    <h3 className="mb-4 font-display text-3xl font-light text-rose font-soft">/{year}/</h3>
-                    <ol className="ml-2 border-l-2 border-dashed border-candy">
+                  <div key={year} className="reveal grid gap-4 sm:grid-cols-[88px_minmax(0,1fr)] sm:gap-6">
+                    <h3 className="font-display text-4xl font-extrabold leading-none tracking-[-0.03em] text-rose [font-stretch:80%] sm:sticky sm:top-20 sm:self-start">
+                      {year}
+                      <span className="sr-only"> · {items.length} hoạt động</span>
+                    </h3>
+                    <ol className="flex flex-col">
                       {items.map((item) => (
-                        <li key={item.id} className="group relative pb-5 pl-6 last:pb-0">
-                          <span
-                            aria-hidden="true"
-                            className="absolute -left-[7px] top-5 size-3 rounded-full bg-gradient-to-br from-coral to-rose ring-4 ring-cream transition-transform duration-300 group-hover:scale-150"
-                          />
-                          <div className="rounded-2xl border border-transparent bg-white/70 p-4 transition-all duration-300 group-hover:border-candy group-hover:bg-white group-hover:shadow-soft">
-                            {item.current && (
-                              <span className="mb-2 inline-block rounded-full bg-butter px-3 py-0.5 text-xs font-bold text-berry">
-                                {item.period}
-                              </span>
-                            )}
-                            <p className="text-sm font-bold text-rose">{item.role}</p>
-                            <p className="mt-0.5 text-pretty font-display text-lg font-medium leading-snug text-berry font-soft">
-                              {item.title}
+                        <li
+                          key={item.id}
+                          className="group border-t border-line py-4 transition-colors first:border-t-0 first:pt-1 sm:first:pt-1.5"
+                        >
+                          {item.current && (
+                            <p className="mb-2 inline-flex items-center gap-2 rounded-md bg-butter px-2 py-0.5 text-xs font-semibold text-ink">
+                              <span aria-hidden="true" className="size-1.5 rounded-full bg-rose" />
+                              {item.period}
                             </p>
-                            {item.org && <p className="mt-1 text-sm text-mauve">{item.org}</p>}
-                          </div>
+                          )}
+                          <p className="label-mono text-mauve">{item.role}</p>
+                          <p className="mt-1.5 text-pretty font-display text-lg font-semibold leading-snug text-ink transition-colors duration-200 group-hover:text-rose">
+                            {item.title}
+                          </p>
+                          {item.org && <p className="mt-1 text-sm text-mauve">{item.org}</p>}
                         </li>
                       ))}
                     </ol>
-                  </Reveal>
+                  </div>
                 )
               })}
             </div>
           </section>
 
-          <section aria-labelledby="achievements-title" className="lg:sticky lg:top-24 lg:self-start">
-            <SectionHeading id="achievements-title" index="04" label="Certificate & Achievement" />
+          <section aria-labelledby="achievements-title" className="lg:sticky lg:top-20 lg:self-start">
+            <SectionHeading id="achievements-title" label="Certificate & Achievement" title="Giải thưởng" />
 
-            <ul className="mt-10 flex flex-col gap-3">
-              {achievements.map((item, index) => {
-                const Icon = achievementIcons[item.icon]
-                return (
-                  <li key={item.title}>
-                    <Reveal delay={index * 70}>
-                      <article className="flex gap-4 rounded-3xl bg-white p-4 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-lift sm:p-5">
-                        <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-candy to-petal text-rose">
-                          <Icon className="size-5" aria-hidden="true" />
-                        </span>
-                        <div className="min-w-0">
-                          <span className="inline-block rounded-full bg-petal px-2.5 py-0.5 text-xs font-bold text-rose">
-                            {item.badge}
-                          </span>
-                          <h3 className="mt-1.5 font-display text-lg font-medium leading-snug text-berry font-soft">
-                            {item.title}
-                          </h3>
-                          <p className="mt-0.5 text-pretty text-sm leading-relaxed text-mauve">{item.detail}</p>
-                        </div>
-                      </article>
-                    </Reveal>
-                  </li>
-                )
-              })}
+            <ul className="mt-10 flex flex-col">
+              {achievements.map((item) => (
+                <li key={item.title} className="reveal border-t border-line py-5 first:border-t-0 first:pt-0">
+                  <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                    <h3 className="font-display text-lg font-semibold leading-snug text-ink">{item.title}</h3>
+                    <span className="label-mono shrink-0 text-rose">{item.badge}</span>
+                  </div>
+                  <p className="mt-1 max-w-[52ch] text-pretty text-sm leading-relaxed text-mauve">{item.detail}</p>
+                </li>
+              ))}
             </ul>
 
-            <Reveal className="mt-6 grid gap-3 sm:grid-cols-2">
-              <div className="rounded-3xl border border-petal bg-white/80 p-5">
-                <h3 className="flex items-center gap-2 font-display text-lg font-medium text-berry font-soft">
-                  <Award className="size-4 text-rose" aria-hidden="true" />
-                  Chứng chỉ
-                </h3>
+            <div className="mt-10 grid gap-8 rounded-xl bg-paper p-6 sm:grid-cols-2">
+              <div>
+                <h3 className="label-mono text-mauve">Chứng chỉ</h3>
                 <ul className="mt-3 flex flex-col gap-3">
                   {certificates.map((cert) => (
                     <li key={cert.title}>
-                      <p className="text-sm font-bold text-berry">{cert.title}</p>
-                      <p className="text-sm text-mauve">{cert.detail}</p>
+                      <p className="text-sm font-semibold text-ink">{cert.title}</p>
+                      <p className="font-mono text-xs text-mauve">{cert.detail}</p>
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="rounded-3xl border border-petal bg-white/80 p-5">
-                <h3 className="flex items-center gap-2 font-display text-lg font-medium text-berry font-soft">
-                  <Languages className="size-4 text-rose" aria-hidden="true" />
-                  Ngôn ngữ
-                </h3>
+              <div>
+                <h3 className="label-mono text-mauve">Ngôn ngữ</h3>
                 <ul className="mt-3 flex flex-wrap gap-2">
                   {languages.map((language) => (
-                    <li
-                      key={language}
-                      className="rounded-full bg-petal px-3 py-1 text-sm font-semibold text-berry transition-colors hover:bg-candy"
-                    >
+                    <li key={language} className="rounded-md border border-line bg-sheet px-2.5 py-1 text-sm font-medium text-ink">
                       {language}
                     </li>
                   ))}
                 </ul>
               </div>
-            </Reveal>
+            </div>
           </section>
         </div>
       </div>

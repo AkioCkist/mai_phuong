@@ -80,7 +80,6 @@ export const goals = [
 
 export const stats = [
   { value: '15+', label: 'chương trình đã tham gia' },
-  { value: '5', label: 'đơn vị đồng hành' },
   { value: 'Top 38', label: 'UD SIEC 2026' },
 ]
 

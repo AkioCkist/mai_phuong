@@ -1,19 +1,25 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Fraunces, Nunito } from 'next/font/google'
+import { Be_Vietnam_Pro, Bricolage_Grotesque, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 
-const fraunces = Fraunces({
+const display = Bricolage_Grotesque({
   subsets: ['latin', 'latin-ext', 'vietnamese'],
-  axes: ['SOFT', 'opsz'],
-  style: ['normal', 'italic'],
-  variable: '--font-fraunces',
+  axes: ['opsz', 'wdth'],
+  variable: '--font-display-face',
   display: 'swap',
 })
 
-const nunito = Nunito({
+const body = Be_Vietnam_Pro({
   subsets: ['latin', 'latin-ext', 'vietnamese'],
-  variable: '--font-nunito',
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-body',
+  display: 'swap',
+})
+
+const mono = JetBrains_Mono({
+  subsets: ['latin', 'latin-ext', 'vietnamese'],
+  variable: '--font-mono-face',
   display: 'swap',
 })
 
@@ -30,7 +36,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'light',
-  themeColor: '#FFC9D6',
+  themeColor: '#fcf7f6',
 }
 
 export default function RootLayout({
@@ -39,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="vi" className={`${fraunces.variable} ${nunito.variable}`}>
+    <html lang="vi" className={`${display.variable} ${body.variable} ${mono.variable}`}>
       <body>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}

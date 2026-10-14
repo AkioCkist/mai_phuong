@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { Sparkles } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const links = [
@@ -33,19 +32,18 @@ export function SiteNav() {
   }, [])
 
   return (
-    <header className="fixed inset-x-0 top-3 z-50 flex justify-center px-3 sm:top-5">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-line/70 bg-paper/85 backdrop-blur-md">
       <nav
         aria-label="Điều hướng chính"
-        className="flex items-center gap-1 rounded-full border border-white/70 bg-white/70 p-1.5 shadow-soft backdrop-blur-md"
+        className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-4 sm:px-8"
       >
         <a
           href="#home"
-          className="hidden items-center gap-1.5 rounded-full px-4 py-2 font-display text-lg font-soft text-rose transition-colors hover:text-berry sm:flex"
+          className="hidden font-display text-lg font-bold tracking-tight text-ink transition-colors hover:text-rose sm:block"
         >
-          <Sparkles className="size-4 text-coral" aria-hidden="true" />
-          Calliope
+          Calliope<span className="text-rose">.</span>
         </a>
-        <ul className="flex items-center gap-0.5">
+        <ul className="flex w-full items-center justify-between gap-1 sm:w-auto sm:justify-end sm:gap-2">
           {links.map((link) => {
             const isActive = active === link.id
             return (
@@ -54,10 +52,9 @@ export function SiteNav() {
                   href={`#${link.id}`}
                   aria-current={isActive ? 'true' : undefined}
                   className={cn(
-                    'relative inline-flex min-h-10 items-center rounded-full px-3.5 text-sm font-semibold transition-all duration-300 sm:px-4',
-                    isActive
-                      ? 'bg-gradient-to-r from-bubblegum to-coral text-berry shadow-soft'
-                      : 'text-mauve hover:bg-petal hover:text-berry',
+                    'label-mono relative inline-flex min-h-11 items-center px-2 transition-colors duration-200 sm:px-3',
+                    'after:absolute after:inset-x-2 after:bottom-2.5 after:h-px after:origin-left after:bg-rose after:transition-transform after:duration-300 after:ease-out-soft sm:after:inset-x-3',
+                    isActive ? 'text-rose after:scale-x-100' : 'text-mauve after:scale-x-0 hover:text-ink',
                   )}
                 >
                   {link.label}
