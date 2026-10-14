@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 import {
   CalendarHeart,
   Clapperboard,
@@ -11,10 +10,11 @@ import {
   Package,
   type LucideIcon,
 } from 'lucide-react'
-import { categoryLabel, events, type EventCategory, type EventItem } from '@/lib/content'
+import { categoryLabel, type EventCategory, type EventItem, type SectionCopy } from '@/lib/content'
 import { cn } from '@/lib/utils'
 import { AlbumViewer } from './album-viewer'
 import { SectionHeading } from './section-heading'
+import { ContentMedia } from './content-media'
 
 const categoryIcon: Record<EventCategory, LucideIcon> = {
   media: Megaphone,
@@ -26,11 +26,11 @@ const categoryIcon: Record<EventCategory, LucideIcon> = {
   intern: CalendarHeart,
 }
 
-const galleryEvents = events.filter((event) => event.inGallery)
-const filters = ['all', 2026, 2025, 2024] as const
-type Filter = (typeof filters)[number]
+type Filter = 'all' | number
 
-export function Gallery() {
+export function Gallery({ events, copy }: { events: EventItem[]; copy: SectionCopy }) {
+  const galleryEvents = events.filter((event) => event.inGallery)
+  const filters: Filter[] = ['all', ...[...new Set(galleryEvents.map((event) => event.year))].sort((a, b) => b - a)]
   const [filter, setFilter] = useState<Filter>('all')
   const [openAlbum, setOpenAlbum] = useState<EventItem | null>(null)
   const visible = galleryEvents.filter((event) => filter === 'all' || event.year === filter)
@@ -41,9 +41,9 @@ export function Gallery() {
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading
             id="gallery-title"
-            label="Gallery"
-            title="Những chương trình đã làm"
-            description="Những chương trình mình đã cùng làm, theo từng năm."
+            label={copy.label}
+            title={copy.title}
+            description={copy.description}
           />
 
           <div role="group" aria-label="Lọc theo năm" className="flex flex-wrap gap-1 rounded-lg border border-line bg-sheet p-1">
@@ -99,10 +99,8 @@ export function Gallery() {
                     />
                     <div className="absolute inset-0 flex items-center justify-center overflow-hidden rounded-xl border-4 border-sheet bg-petal shadow-[0_14px_30px_-18px_rgba(46,21,32,0.45)] transition-transform duration-500 ease-out-soft group-hover:-translate-y-1.5">
                       {cover ? (
-                        <Image
-                          src={cover}
-                          alt=""
-                          fill
+                        <ContentMedia
+                          media={{ src: cover, type: event.photos?.find((item) => item.src === cover)?.type ?? 'image', alt: '' }}
                           sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw"
                           className="object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.04]"
                         />

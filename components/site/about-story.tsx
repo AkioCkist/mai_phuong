@@ -1,27 +1,25 @@
-import Image from 'next/image'
-import { goals, stats, storyChapters } from '@/lib/content'
+import type { GoalItem, SiteCopy, StatItem, StoryChapter } from '@/lib/content'
 import { Reveal } from './reveal'
 import { SectionHeading } from './section-heading'
 import { StickyBounce } from './sticky-bounce'
+import { ContentMedia } from './content-media'
 
-export function AboutStory() {
+export function AboutStory({ chapters, goals, stats, copy }: { chapters: StoryChapter[]; goals: GoalItem[]; stats: StatItem[]; copy: SiteCopy }) {
   return (
     <div className="px-4 pb-24 sm:px-8">
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           id="about-title"
-          label="About"
-          title="Câu chuyện của mình"
-          description="Mình chưa bao giờ giỏi giới thiệu bản thân, nên mình kể bằng cách này."
+          label={copy.about.label}
+          title={copy.about.title}
+          description={copy.about.description}
         />
 
         <div className="mt-12 grid gap-12 lg:grid-cols-[300px_minmax(0,1fr)] lg:gap-16">
           <StickyBounce className="lg:sticky lg:top-24 lg:self-start">
             <div className="relative mx-auto aspect-[4/5] max-w-xs overflow-hidden rounded-2xl bg-[#f9ecdf] lg:max-w-none">
-              <Image
-                src={encodeURI('/Ảnh câu chuyện của mình/Ảnh hero.jpg')}
-                alt="Mai Phương cầm máy ảnh giữa khung cảnh núi và mây"
-                fill
+              <ContentMedia
+                media={copy.storyMedia}
                 sizes="(min-width: 1024px) 300px, 320px"
                 className="object-cover object-center"
               />
@@ -40,7 +38,7 @@ export function AboutStory() {
           </StickyBounce>
 
           <ol className="flex flex-col">
-            {storyChapters.map((chapter) => (
+            {chapters.map((chapter) => (
               <li
                 key={chapter.label}
                 className="reveal grid gap-2 border-t border-line py-7 first:border-t-0 first:pt-0 sm:grid-cols-[120px_minmax(0,1fr)] sm:gap-8"
@@ -53,7 +51,7 @@ export function AboutStory() {
         </div>
 
         <Reveal className="mt-20">
-          <p className="label-mono text-mauve">Mình muốn đi về đâu</p>
+          <p className="label-mono text-mauve">{copy.aboutGoalsLabel}</p>
           <div className="mt-5 grid gap-10 md:grid-cols-2 md:gap-12">
             {goals.map((goal) => (
               <article key={goal.horizon} className="border-t-2 border-ink pt-5">

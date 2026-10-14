@@ -1,16 +1,16 @@
 import Image from 'next/image'
 import { ArrowDown, ArrowUpRight } from 'lucide-react'
-import { events, profile } from '@/lib/content'
+import type { EventItem, SiteContent, SiteCopy } from '@/lib/content'
+import { ContentMedia } from './content-media'
 
-const current = events.find((event) => event.current)
-
-export function Hero() {
+export function Hero({ profile, copy, events }: { profile: SiteContent['profile']; copy: SiteCopy; events: EventItem[] }) {
+  const current = events.find((event) => event.current)
   return (
     <section id="home" className="px-4 pb-20 pt-24 sm:px-8 sm:pt-28">
       <div className="mx-auto max-w-6xl">
         <div className="label-mono flex flex-wrap justify-between gap-x-6 gap-y-1 text-mauve">
-          <span>Portfolio · 2026</span>
-          <span>Event · Truyền thông · HR Admin</span>
+          <span>{copy.heroEyebrow}</span>
+          <span>{copy.heroSpecialties}</span>
         </div>
 
         <h1 className="mt-6 font-display font-extrabold leading-[0.88] tracking-[-0.035em] text-ink [font-stretch:80%] sm:mt-8">
@@ -33,14 +33,14 @@ export function Hero() {
                 href="#about"
                 className="group inline-flex min-h-12 items-center gap-2 rounded-lg bg-ink px-5 text-sm font-semibold text-paper transition-colors duration-200 hover:bg-rose"
               >
-                Xem hành trình của mình
+                {copy.heroPrimaryCta}
                 <ArrowDown className="size-4 transition-transform duration-300 group-hover:translate-y-0.5" />
               </a>
               <a
                 href="#contact"
                 className="group inline-flex min-h-12 items-center gap-2 rounded-lg border border-ink/15 px-5 text-sm font-semibold text-ink transition-colors duration-200 hover:border-rose hover:text-rose"
               >
-                Nhắn mình nhé
+                {copy.heroSecondaryCta}
                 <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               </a>
             </div>
@@ -48,10 +48,8 @@ export function Hero() {
 
           <figure className="relative order-1 animate-settle [animation-delay:200ms] lg:order-2">
             <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-[#f9ecdf]">
-              <Image
-                src={encodeURI('/Ảnh chính/Ảnh Bìa.jpg')}
-                alt="Chân dung Mai Phương tại một sự kiện ngoài trời"
-                fill
+              <ContentMedia
+                media={copy.heroMedia}
                 priority
                 sizes="(min-width: 1024px) 620px, 100vw"
                 className="object-cover object-center"

@@ -1,0 +1,1002 @@
+{
+  "profile": {
+    "name": "Mai Phương",
+    "nickname": "Calliope",
+    "overview": "Chào bạn, mình là Mai Phương, hay còn gọi là Calliope. Sinh viên năm 3 ngành Quản trị kinh doanh tổng hợp, VNUS – Đại học Duy Tân. Mình làm sự kiện, truyền thông và Hành chính-Nhân sự, thích làm việc với con người và đang thử sức với khởi nghiệp đổi mới sáng tạo. Nơi này là nơi mình gom lại những gì mình đã làm."
+  },
+  "copy": {
+    "siteTitle": "Mai Phương (Calliope) — Portfolio",
+    "siteDescription": "Portfolio của Mai Phương (Calliope): sinh viên Quản trị kinh doanh, làm sự kiện, truyền thông và Hành chính – Nhân sự.",
+    "navBrand": "Calliope.",
+    "navHome": "Home",
+    "navEvents": "Events",
+    "navAbout": "About",
+    "navGallery": "Gallery",
+    "navContact": "Contact",
+    "backToTop": "Về đầu trang",
+    "heroEyebrow": "Portfolio · 2026",
+    "heroSpecialties": "Event · Truyền thông · HR Admin",
+    "heroPrimaryCta": "Xem hành trình của mình",
+    "heroSecondaryCta": "Nhắn mình nhé",
+    "heroMedia": {
+      "src": "/%E1%BA%A2nh%20ch%C3%ADnh/%E1%BA%A2nh%20B%C3%ACa.jpg",
+      "type": "image",
+      "alt": "Chân dung Mai Phương tại một sự kiện ngoài trời"
+    },
+    "storyMedia": {
+      "src": "/%E1%BA%A2nh%20c%C3%A2u%20chuy%E1%BB%87n%20c%E1%BB%A7a%20m%C3%ACnh/%E1%BA%A2nh%20hero.jpg",
+      "type": "image",
+      "alt": "Mai Phương cầm máy ảnh giữa khung cảnh núi và mây"
+    },
+    "highlights": {
+      "label": "Highlights",
+      "title": "Các sự kiện nổi bật",
+      "description": "Sáu dấu mốc mình nhớ nhất, từ sự kiện đầu tiên đến mùa Trung thu năm nay."
+    },
+    "about": {
+      "label": "About",
+      "title": "Câu chuyện của mình",
+      "description": "Mình chưa bao giờ giỏi giới thiệu bản thân, nên mình kể bằng cách này."
+    },
+    "aboutGoalsLabel": "Mình muốn đi về đâu",
+    "experience": {
+      "label": "Experience",
+      "title": "Kinh nghiệm",
+      "description": "Mới nhất ở trên cùng."
+    },
+    "achievements": {
+      "label": "Certificate & Achievement",
+      "title": "Giải thưởng"
+    },
+    "certificatesLabel": "Chứng chỉ",
+    "languagesLabel": "Ngôn ngữ",
+    "gallery": {
+      "label": "Gallery",
+      "title": "Những chương trình đã làm",
+      "description": "Những chương trình mình đã cùng làm, theo từng năm."
+    },
+    "contact": {
+      "label": "Contact",
+      "title": "Cùng làm một điều gì đó nhé",
+      "description": "Nếu bạn muốn cùng làm một điều gì đó, nhắn mình một tiếng nhé."
+    },
+    "footer": "Mai Phương – Calliope · 2026"
+  },
+  "highlights": [
+    {
+      "eventId": "u-invent-7",
+      "title": "U-invent 7 – Innovation for a safer future",
+      "meta": "VNUK x UNICEF · 2024",
+      "text": "Tình nguyện viên truyền thông & đối ngoại. Sự kiện đầu tiên của mình, nơi mình biết mình mê cảm giác đứng sau sân khấu."
+    },
+    {
+      "eventId": "impact-innovation-bootcamp",
+      "title": "Impact Innovation Bootcamp 2025",
+      "meta": "Bệnh viện 199 x VNUK x Greenwich x Rainscales",
+      "text": "Ban tổ chức. Phối hợp nhiều đơn vị đối tác trong một chương trình đổi mới sáng tạo."
+    },
+    {
+      "eventId": "img-gx-summit",
+      "title": "IMG GX Leadership Convergence Summit Vietnam 2026",
+      "meta": "BACKSTAGE · 2026",
+      "text": "Helper backstage. Làm việc cùng đội ngũ BACKSTAGE chuyên nghiệp, học cách giữ nhịp khi mọi thứ diễn ra rất nhanh."
+    },
+    {
+      "eventId": "tu-nong-truong",
+      "title": "Lễ ra mắt dự án & talkshow “Từ Nông Trường, ra thị trường”",
+      "meta": "JCI Hội An, Global Gateway x VNUK · 2026",
+      "text": "Ban tổ chức. Một sự kiện kết nối nông sản địa phương với thị trường."
+    },
+    {
+      "eventId": "toa-soan-xanh",
+      "title": "Tòa Soạn Xanh Đà Nẵng",
+      "meta": "UNICEF x VNUK · 2026",
+      "text": "Mentor sinh viên ban tin tức. Đồng hành cùng các bạn trẻ làm tin và kể chuyện."
+    },
+    {
+      "eventId": "hoa-sac-trung-thu",
+      "title": "Trung thu 2026",
+      "meta": "Workshop & thiện nguyện",
+      "text": "Trưởng ban tổ chức Workshop làm bánh dẻo “Họa Sắc Trung Thu” và Phó ban tổ chức chương trình thiện nguyện “Trao Trăng Cho Em” tại Trung tâm nuôi dạy trẻ mồ côi Hoa Mai."
+    }
+  ],
+  "storyChapters": [
+    {
+      "label": "Xin chào",
+      "text": "Mình là Mai Phương, hay còn gọi là Calliope. Sinh viên năm 3 chuyên ngành quản trị kinh doanh tổng hợp chương trình PSU tại Trường đào tạo quốc tế VNUS, Đại Học Duy Tân, và thú thật là mình chưa bao giờ giỏi giới thiệu bản thân. Mỗi lần ngồi viết là thấy chuyện nào cũng muốn kể chỉ là chưa biết bắt đầu từ đâu cho đúng. Chắc bắt đầu từ năm 2024 đi. Lúc đó mình chỉ là tình nguyện viên truyền thông và đối ngoại ở U-invent 7 (VNUK x UNICEF). Không phải vai gì to tát đâu. Nhưng mình nhớ cảm giác đứng sau sân khấu, thấy sự kiện chạy trơn tru mà không ai biết đằng sau có bao nhiêu người đang chạy qua chạy lại. Mình thấy mê cái cảm giác đó."
+    },
+    {
+      "label": "Đi tiếp",
+      "text": "Rồi mình cứ thế đi tiếp. Hậu cần, truyền thông, đối ngoại, helper backstage, ban tổ chức... tính ra hơn 15 chương trình cùng VNUK, UNICEF, JCI, DTU, BACKSTAGE. Mỗi cái học được một ít: viết sao cho người ta muốn đọc, nói chuyện với đối tác sao cho đỡ run, và kế hoạch đổi phút chót thì vẫn phải bình tĩnh. (cái này mình vẫn đang tập)."
+    },
+    {
+      "label": "Con người",
+      "text": "Có một thứ mình không ngờ tới là mình thích làm việc với con người hơn mình tưởng. Làm Trưởng ban tổ chức Workshop làm bánh dẻo “Họa Sắc Trung Thu”, Phó ban tổ chức “Trao Trăng Cho Em”, rồi Mentor ban tin tức Tòa Soạn Xanh Đà Nẵng, mình mới biết quản người khó hơn quản việc. Phải lắng nghe, phải biết bạn nào hợp việc gì, và đôi khi chỉ cần nói một câu “bạn làm được mà” là bạn ấy làm được thật."
+    },
+    {
+      "label": "Đi thi",
+      "text": "Song song đó mình hay đi thi. Ở IB-Solver’s Cup 2025, mình làm leader nhóm EPI, giải case của doanh nghiệp thật, đi đến bán kết. Mình nhớ nhóm cãi nhau khá nhiều, mà cuối cùng vẫn ra được một lời giải. Đến DTU ERPsim League 2026 cùng đội OPTIMINDS thì mình chỉ được Consolation Prize thôi, nhưng học được nhiều lắm, vì điều hành một doanh nghiệp trên hệ thống ERP, sai một quyết định là thấy số liệu đổi ngay."
+    },
+    {
+      "label": "Khởi nghiệp",
+      "text": "Còn khởi nghiệp thì... mình cũng không biết nói sao cho hay. Chắc là mình thấy làm sự kiện xong là hết, còn mình muốn làm gì đó ở lại lâu hơn. Nên mình thử: nhóm FiberMedical vào bán kết Startup Runway 2025 và Lulasa, xà phòng kháng khuẩn từ dược liệu bản địa Việt Nam. Lulasa vừa lọt Top 38 UD SIEC 2026, mình vui lắm, dù còn cả một chặng đường dài phía trước."
+    },
+    {
+      "label": "Hiện tại",
+      "text": "Hiện tại mình đang là Event Management Intern ở Maker Innovation Space (VNUK Institute). Vẫn còn đang học, còn vụng, nhưng mình bắt đầu thấy rõ mình muốn đi về đâu."
+    }
+  ],
+  "goals": [
+    {
+      "horizon": "3 năm tới",
+      "role": "HR Admin, Internal Communications & Event Executive",
+      "text": "Nghe hơi dài nhưng thật ra là một: mình thích làm cho người trong một công ty thấy gắn bó với nhau, từ những thứ nhỏ như một buổi họp mặt, một bản tin nội bộ, đến cách chào đón một bạn nhân viên mới."
+    },
+    {
+      "horizon": "10 năm nữa",
+      "role": "HR Manager, Internal Communications & Employer Branding Manager",
+      "text": "Mình tin một nơi làm việc tử tế sẽ tự kể được câu chuyện đẹp về chính nó, và mình muốn là người giúp câu chuyện đó được kể đúng."
+    }
+  ],
+  "stats": [
+    {
+      "value": "15+",
+      "label": "chương trình đã tham gia"
+    },
+    {
+      "value": "Top 38",
+      "label": "UD SIEC 2026"
+    }
+  ],
+  "events": [
+    {
+      "id": "u-invent-7",
+      "year": 2024,
+      "role": "Tình nguyện viên truyền thông & đối ngoại",
+      "title": "U-invent 7 (Innovation for a safer future)",
+      "org": "VNUK x UNICEF",
+      "category": "media",
+      "inGallery": true,
+      "photos": [
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/UI%207/476154267_122193528482060938_1772189951482095807_n.jpg",
+          "alt": "U-invent 7 (Innovation for a safer future), ảnh 1"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/UI%207/474050961_122191848908060938_7807911909052279483_n.jpg",
+          "alt": "U-invent 7 (Innovation for a safer future), ảnh 2"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/UI%207/474532628_122191848632060938_368786480398320942_n.jpg",
+          "alt": "U-invent 7 (Innovation for a safer future), ảnh 3"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/UI%207/474613804_122191849028060938_2928661450660140078_n.jpg",
+          "alt": "U-invent 7 (Innovation for a safer future), ảnh 4"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/UI%207/485788740_1082045800615572_6666740192992282140_n.jpg",
+          "alt": "U-invent 7 (Innovation for a safer future), ảnh 5"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/UI%207/486225375_1082694197217399_3365995607189134017_n.jpg",
+          "alt": "U-invent 7 (Innovation for a safer future), ảnh 6"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/UI%207/486602114_1082405490579603_314222018973851224_n.jpg",
+          "alt": "U-invent 7 (Innovation for a safer future), ảnh 7"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/UI%207/486688649_1082694160550736_4122913946790976069_n.jpg",
+          "alt": "U-invent 7 (Innovation for a safer future), ảnh 8"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/UI%207/486700650_1082694143884071_5410591050823484882_n.jpg",
+          "alt": "U-invent 7 (Innovation for a safer future), ảnh 9"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/UI%207/493817207_1235458151917769_2547592668103785865_n.jpg",
+          "alt": "U-invent 7 (Innovation for a safer future), ảnh 10"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/UI%207/Certi_H%E1%BB%93%20Mai%20Ph%C6%B0%C6%A1ng_UNICEF_U-INVENT%207.jpg",
+          "alt": "U-invent 7 (Innovation for a safer future), ảnh 11"
+        }
+      ]
+    },
+    {
+      "id": "champion-press",
+      "year": 2026,
+      "role": "Ban tổ chức",
+      "title": "Workshop Design thinking workshop: “start your business with a paper”",
+      "org": "VNUK x Wildcats",
+      "category": "media",
+      "inGallery": true,
+      "photos": [
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/DESIGN%20THINKING%20WORKSHOP%20%E2%80%9CSTART%20YOUR%20BUSINESS%20WITH%20A%20PAPER/656748766_1523217713141810_1579646169766129611_n.jpg",
+          "alt": "Workshop Design thinking workshop: “start your business with a paper”, ảnh 1"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/DESIGN%20THINKING%20WORKSHOP%20%E2%80%9CSTART%20YOUR%20BUSINESS%20WITH%20A%20PAPER/655020642_1523217719808476_5262563307733298227_n.jpg",
+          "alt": "Workshop Design thinking workshop: “start your business with a paper”, ảnh 2"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/DESIGN%20THINKING%20WORKSHOP%20%E2%80%9CSTART%20YOUR%20BUSINESS%20WITH%20A%20PAPER/655051180_1523217673141814_3227720254158669645_n.jpg",
+          "alt": "Workshop Design thinking workshop: “start your business with a paper”, ảnh 3"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/DESIGN%20THINKING%20WORKSHOP%20%E2%80%9CSTART%20YOUR%20BUSINESS%20WITH%20A%20PAPER/655390023_1523217666475148_9182516493615305424_n.jpg",
+          "alt": "Workshop Design thinking workshop: “start your business with a paper”, ảnh 4"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/DESIGN%20THINKING%20WORKSHOP%20%E2%80%9CSTART%20YOUR%20BUSINESS%20WITH%20A%20PAPER/655575067_1523217739808474_3223458191093251958_n.jpg",
+          "alt": "Workshop Design thinking workshop: “start your business with a paper”, ảnh 5"
+        }
+      ]
+    },
+    {
+      "id": "dtu-sports-festival",
+      "year": 2025,
+      "role": "Tình nguyện viên truyền thông & vận hành",
+      "title": "DTU Sports Festival 2025",
+      "category": "media",
+      "inGallery": true,
+      "photos": [
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/DTU%20SPORTS%20FESTIVAL/497513092_122121687716827982_3941343486914445330_n.jpg",
+          "alt": "DTU Sports Festival 2025, ảnh 1"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/DTU%20SPORTS%20FESTIVAL/490725549_1080946414070228_8294970825375022422_n.jpg",
+          "alt": "DTU Sports Festival 2025, ảnh 2"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/DTU%20SPORTS%20FESTIVAL/490833461_1080946450736891_7372160862457931202_n.jpg",
+          "alt": "DTU Sports Festival 2025, ảnh 3"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/DTU%20SPORTS%20FESTIVAL/490912366_1080946540736882_3947505711235557165_n.jpg",
+          "alt": "DTU Sports Festival 2025, ảnh 4"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/DTU%20SPORTS%20FESTIVAL/491857058_1080946460736890_4351590104991717467_n.jpg",
+          "alt": "DTU Sports Festival 2025, ảnh 5"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/DTU%20SPORTS%20FESTIVAL/492009601_1080972274067642_8131264519018324501_n.jpg",
+          "alt": "DTU Sports Festival 2025, ảnh 6"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/DTU%20SPORTS%20FESTIVAL/495964389_122121768926827982_193141486629175558_n.jpg",
+          "alt": "DTU Sports Festival 2025, ảnh 7"
+        }
+      ]
+    },
+    {
+      "id": "business-forum-cye",
+      "year": 2025,
+      "role": "Tình nguyện viên đối ngoại",
+      "title": "Business Forum & Kickoff CYE 2025",
+      "category": "media",
+      "inGallery": true,
+      "photos": [
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/BUSINESS%20FORUM&KICKOFF%20CYE%202025/IMG_20250613_214919.jpg",
+          "alt": "Business Forum & Kickoff CYE 2025, ảnh 1"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/BUSINESS%20FORUM&KICKOFF%20CYE%202025/IMG_20250614_134146.jpg",
+          "alt": "Business Forum & Kickoff CYE 2025, ảnh 2"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/BUSINESS%20FORUM&KICKOFF%20CYE%202025/IMG_20250614_134204.jpg",
+          "alt": "Business Forum & Kickoff CYE 2025, ảnh 3"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/BUSINESS%20FORUM&KICKOFF%20CYE%202025/IMG_20250614_134255.jpg",
+          "alt": "Business Forum & Kickoff CYE 2025, ảnh 4"
+        }
+      ]
+    },
+    {
+      "id": "impact-innovation-bootcamp",
+      "year": 2025,
+      "role": "Ban tổ chức",
+      "title": "Impact Innovation Bootcamp 2025",
+      "org": "Bệnh viện 199 x VNUK x Greenwich x Rainscales",
+      "category": "organizer",
+      "inGallery": true,
+      "photos": [
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/IIB/593716897_122114888949039660_4722707224517023514_n.jpg",
+          "alt": "Impact Innovation Bootcamp 2025, ảnh 1"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/IIB/576764276_122111473509039660_2897721947365429806_n.jpg",
+          "alt": "Impact Innovation Bootcamp 2025, ảnh 2"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/IIB/577562639_122111494761039660_1379532956228310407_n.jpg",
+          "alt": "Impact Innovation Bootcamp 2025, ảnh 3"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/IIB/583104407_122112758241039660_3610590182404197940_n.jpg",
+          "alt": "Impact Innovation Bootcamp 2025, ảnh 4"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/IIB/585200872_122113346643039660_6506617049200362682_n.jpg",
+          "alt": "Impact Innovation Bootcamp 2025, ảnh 5"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/IIB/593594848_122114891949039660_8190541458742041064_n.jpg",
+          "alt": "Impact Innovation Bootcamp 2025, ảnh 6"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/IIB/593605141_122114889801039660_3537556093348877201_n.jpg",
+          "alt": "Impact Innovation Bootcamp 2025, ảnh 7"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/IIB/593609331_122114892807039660_1990131292143897676_n.jpg",
+          "alt": "Impact Innovation Bootcamp 2025, ảnh 8"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/IIB/593692496_122114892087039660_5792288630502807597_n.jpg",
+          "alt": "Impact Innovation Bootcamp 2025, ảnh 9"
+        }
+      ]
+    },
+    {
+      "id": "meet-the-real-voices",
+      "year": 2025,
+      "role": "Cộng tác viên",
+      "title": "Meet The Real Voices",
+      "org": "UNICEF",
+      "category": "volunteer",
+      "inGallery": true,
+      "photos": [
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Meet%20The%20Real%20Voices/1791974320393_2076934772382329659_6370349143950497153_145b2227a4559593cf5acd2c34078b37.jpg",
+          "alt": "Meet The Real Voices, ảnh 1"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Meet%20The%20Real%20Voices/1791974320367_2076934772382329659_6370349143950497153_12a62cf06fa50fdb1b58cb210d811ca5.jpg",
+          "alt": "Meet The Real Voices, ảnh 2"
+        }
+      ]
+    },
+    {
+      "id": "vnuk-innovation-challenges",
+      "year": 2025,
+      "role": "Cộng tác viên",
+      "title": "Chuỗi cuộc thi VNUK Innovation Challenges 2025",
+      "org": "VNUK",
+      "category": "volunteer",
+      "inGallery": true,
+      "photos": [
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/649232887_122170807976618003_4700681396336248273_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 1"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/613030952_122166238550618003_8559893146215392622_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 2"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/614396155_122166237602618003_2836794218507098280_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 3"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/614460688_122166238478618003_8127175154857009661_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 4"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/614844897_122166237194618003_5034523556510063011_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 5"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/614874788_122166238616618003_6446489299184256780_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 6"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/614988014_122166238094618003_1250273271014915072_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 7"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/615267583_122166237362618003_4571561042512193937_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 8"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/615338663_122166237608618003_4633836351181375957_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 9"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/624991987_122167950314618003_6151323034427202624_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 10"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/625199661_122167949888618003_4014529460816240403_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 11"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/626745584_122167950416618003_2752749077851287566_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 12"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/629386537_122168548664618003_5706753908122470963_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 13"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/629489195_122168549612618003_9053556357838971237_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 14"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/629584592_122168548700618003_4481466977200085258_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 15"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/629817071_122168548868618003_6218923627696390939_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 16"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/630218075_122168549516618003_5119775704636905769_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 17"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/631277099_122168548748618003_4188419615322037894_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 18"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/632065730_122168548826618003_6401310150147095475_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 19"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/648950040_122170807856618003_5614700112123000889_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 20"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/649139142_122170808768618003_8914229286592727487_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 21"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/VNUK-Innovation%20challenges%202025/649183587_122170807868618003_3614011634907355678_n.jpg",
+          "alt": "Chuỗi cuộc thi VNUK Innovation Challenges 2025, ảnh 22"
+        }
+      ]
+    },
+    {
+      "id": "img-gx-summit",
+      "year": 2026,
+      "role": "Helper backstage",
+      "title": "IMG GX Leadership Convergence Summit Vietnam 2026",
+      "org": "Backstage company",
+      "category": "backstage",
+      "inGallery": true,
+      "photos": [
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/IMG%20GX%20Leadership/1791973541122_2076934772382329659_6370349143950497153_23a310a21c76576ccfb371ee374b6bca.jpg",
+          "alt": "IMG GX Leadership Convergence Summit Vietnam 2026, ảnh 1"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/IMG%20GX%20Leadership/1791973541024_2076934772382329659_6370349143950497153_5993d4da284b4d2181643feccf49ca35.jpg",
+          "alt": "IMG GX Leadership Convergence Summit Vietnam 2026, ảnh 2"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/IMG%20GX%20Leadership/1791973541051_2076934772382329659_6370349143950497153_11fc22fbb90b9b6512747ff851363b33.jpg",
+          "alt": "IMG GX Leadership Convergence Summit Vietnam 2026, ảnh 3"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/IMG%20GX%20Leadership/1791973541074_2076934772382329659_6370349143950497153_7866b9303e75e7b6b3eab0f68c3bd23e.jpg",
+          "alt": "IMG GX Leadership Convergence Summit Vietnam 2026, ảnh 4"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/IMG%20GX%20Leadership/1791973541098_2076934772382329659_6370349143950497153_799d609784d2911c2fcb1142ea588391.jpg",
+          "alt": "IMG GX Leadership Convergence Summit Vietnam 2026, ảnh 5"
+        }
+      ]
+    },
+    {
+      "id": "company-trip-jci",
+      "year": 2026,
+      "role": "Cộng tác viên truyền thông & đối ngoại",
+      "title": "Company Trip 2026",
+      "org": "JCI Đà Nẵng, B&E",
+      "category": "media",
+      "inGallery": true,
+      "photos": [
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/COMPANY%20TRIP%202026-JCI%20%C4%90%C3%A0%20N%E1%BA%B5ng,%20B&E/IMG20260523142621.jpg",
+          "alt": "Company Trip 2026, ảnh 1"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/COMPANY%20TRIP%202026-JCI%20%C4%90%C3%A0%20N%E1%BA%B5ng,%20B&E/IMG_20260524_182630.jpg",
+          "alt": "Company Trip 2026, ảnh 2"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/COMPANY%20TRIP%202026-JCI%20%C4%90%C3%A0%20N%E1%BA%B5ng,%20B&E/IMG_20260524_182949.jpg",
+          "alt": "Company Trip 2026, ảnh 3"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/COMPANY%20TRIP%202026-JCI%20%C4%90%C3%A0%20N%E1%BA%B5ng,%20B&E/IMG_20260524_183520.jpg",
+          "alt": "Company Trip 2026, ảnh 4"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/COMPANY%20TRIP%202026-JCI%20%C4%90%C3%A0%20N%E1%BA%B5ng,%20B&E/IMG_20260524_184158.jpg",
+          "alt": "Company Trip 2026, ảnh 5"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/COMPANY%20TRIP%202026-JCI%20%C4%90%C3%A0%20N%E1%BA%B5ng,%20B&E/IMG20260523135708.jpg",
+          "alt": "Company Trip 2026, ảnh 6"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/COMPANY%20TRIP%202026-JCI%20%C4%90%C3%A0%20N%E1%BA%B5ng,%20B&E/IMG20260523135731.jpg",
+          "alt": "Company Trip 2026, ảnh 7"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/COMPANY%20TRIP%202026-JCI%20%C4%90%C3%A0%20N%E1%BA%B5ng,%20B&E/IMG20260523142524.jpg",
+          "alt": "Company Trip 2026, ảnh 8"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/COMPANY%20TRIP%202026-JCI%20%C4%90%C3%A0%20N%E1%BA%B5ng,%20B&E/IMG20260523142611.jpg",
+          "alt": "Company Trip 2026, ảnh 9"
+        }
+      ]
+    },
+    {
+      "id": "tu-nong-truong",
+      "year": 2026,
+      "role": "Ban tổ chức",
+      "title": "Lễ ra mắt dự án & talkshow “Từ Nông Trường, ra thị trường”",
+      "org": "JCI Hội An, Global Gateway x VNUK",
+      "category": "organizer",
+      "inGallery": true,
+      "photos": [
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/L%E1%BB%85%20ra%20m%E1%BA%AFt%20d%E1%BB%B1%20%C3%A1n%20&%20talkshow/741670490_122144531961129826_2378636152617721350_n.jpg",
+          "alt": "Lễ ra mắt dự án & talkshow “Từ Nông Trường, ra thị trường”, ảnh 1"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/L%E1%BB%85%20ra%20m%E1%BA%AFt%20d%E1%BB%B1%20%C3%A1n%20&%20talkshow/739100699_122144531451129826_6012503414801730634_n.jpg",
+          "alt": "Lễ ra mắt dự án & talkshow “Từ Nông Trường, ra thị trường”, ảnh 2"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/L%E1%BB%85%20ra%20m%E1%BA%AFt%20d%E1%BB%B1%20%C3%A1n%20&%20talkshow/739200100_122144531241129826_8715724667360555895_n.jpg",
+          "alt": "Lễ ra mắt dự án & talkshow “Từ Nông Trường, ra thị trường”, ảnh 3"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/L%E1%BB%85%20ra%20m%E1%BA%AFt%20d%E1%BB%B1%20%C3%A1n%20&%20talkshow/739309467_122144531565129826_1481249009241925384_n.jpg",
+          "alt": "Lễ ra mắt dự án & talkshow “Từ Nông Trường, ra thị trường”, ảnh 4"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/L%E1%BB%85%20ra%20m%E1%BA%AFt%20d%E1%BB%B1%20%C3%A1n%20&%20talkshow/740333980_122144531157129826_2557073066135254273_n.jpg",
+          "alt": "Lễ ra mắt dự án & talkshow “Từ Nông Trường, ra thị trường”, ảnh 5"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/L%E1%BB%85%20ra%20m%E1%BA%AFt%20d%E1%BB%B1%20%C3%A1n%20&%20talkshow/741569427_122144531085129826_9111078712910798937_n.jpg",
+          "alt": "Lễ ra mắt dự án & talkshow “Từ Nông Trường, ra thị trường”, ảnh 6"
+        }
+      ]
+    },
+    {
+      "id": "toa-soan-xanh",
+      "year": 2026,
+      "role": "Mentor sinh viên ban tin tức",
+      "title": "Dự án Tòa Soạn Xanh Đà Nẵng",
+      "org": "UNICEF x VNUK",
+      "category": "mentor",
+      "inGallery": true,
+      "photos": [
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/T%C3%B2a%20So%E1%BA%A1n%20Xanh%20%C4%90%C3%A0%20N%E1%BA%B5ng/741464639_122108490254628921_8024705214361246557_n.jpg",
+          "alt": "Dự án Tòa Soạn Xanh Đà Nẵng, ảnh 1"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/T%C3%B2a%20So%E1%BA%A1n%20Xanh%20%C4%90%C3%A0%20N%E1%BA%B5ng/1791974074730_2076934772382329659_6370349143950497153_88cf2fcb374245f57a26843af4c9d2db.jpg",
+          "alt": "Dự án Tòa Soạn Xanh Đà Nẵng, ảnh 2"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/T%C3%B2a%20So%E1%BA%A1n%20Xanh%20%C4%90%C3%A0%20N%E1%BA%B5ng/486693748_1085327316954087_4077041258313940970_n.jpg",
+          "alt": "Dự án Tòa Soạn Xanh Đà Nẵng, ảnh 3"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/T%C3%B2a%20So%E1%BA%A1n%20Xanh%20%C4%90%C3%A0%20N%E1%BA%B5ng/487302964_1085326986954120_7354570519001104760_n.jpg",
+          "alt": "Dự án Tòa Soạn Xanh Đà Nẵng, ảnh 4"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/T%C3%B2a%20So%E1%BA%A1n%20Xanh%20%C4%90%C3%A0%20N%E1%BA%B5ng/487700430_1085327000287452_5288066187176673318_n.jpg",
+          "alt": "Dự án Tòa Soạn Xanh Đà Nẵng, ảnh 5"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/T%C3%B2a%20So%E1%BA%A1n%20Xanh%20%C4%90%C3%A0%20N%E1%BA%B5ng/738504159_122108490038628921_6446624382006342427_n.jpg",
+          "alt": "Dự án Tòa Soạn Xanh Đà Nẵng, ảnh 6"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/T%C3%B2a%20So%E1%BA%A1n%20Xanh%20%C4%90%C3%A0%20N%E1%BA%B5ng/740533693_122108490212628921_4944314405374616279_n.jpg",
+          "alt": "Dự án Tòa Soạn Xanh Đà Nẵng, ảnh 7"
+        }
+      ]
+    },
+    {
+      "id": "mua-he-xanh",
+      "year": 2026,
+      "role": "Cộng tác viên ban chuyển đổi số & truyền thông",
+      "title": "Mùa Hè Xanh 2026",
+      "org": "DTU",
+      "category": "media",
+      "inGallery": true,
+      "photos": [
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/MHX/1791974756887_2076934772382329659_6370349143950497153_bcda3ad47784786bbb9c0bd1ecdcbe56.jpg",
+          "alt": "Mùa Hè Xanh 2026, ảnh 1"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/MHX/1791974756656_2076934772382329659_6370349143950497153_a26d0175fdeb4d511832bd7dec21964d.jpg",
+          "alt": "Mùa Hè Xanh 2026, ảnh 2"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/MHX/1791974756690_2076934772382329659_6370349143950497153_b8886bdda5a1c73a6677e764a4a2b42c.jpg",
+          "alt": "Mùa Hè Xanh 2026, ảnh 3"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/MHX/1791974756715_2076934772382329659_6370349143950497153_cd98adac875a2811b26af0d2bfedfb05.jpg",
+          "alt": "Mùa Hè Xanh 2026, ảnh 4"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/MHX/1791974756740_2076934772382329659_6370349143950497153_0d627ac49ead275a7dfa4dd212427dd8.jpg",
+          "alt": "Mùa Hè Xanh 2026, ảnh 5"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/MHX/1791974756763_2076934772382329659_6370349143950497153_78effb5c3b964df0cbb1310a21e272c4.jpg",
+          "alt": "Mùa Hè Xanh 2026, ảnh 6"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/MHX/1791974756794_2076934772382329659_6370349143950497153_848232c9965a4914d035f95f1752e652.jpg",
+          "alt": "Mùa Hè Xanh 2026, ảnh 7"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/MHX/1791974756821_2076934772382329659_6370349143950497153_daa460b7269e1226e0c932b17e312a8c.jpg",
+          "alt": "Mùa Hè Xanh 2026, ảnh 8"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/MHX/1791974756851_2076934772382329659_6370349143950497153_7ad42a9bb8e83b2946f98672932f21dd.jpg",
+          "alt": "Mùa Hè Xanh 2026, ảnh 9"
+        }
+      ]
+    },
+    {
+      "id": "hoa-sac-trung-thu",
+      "year": 2026,
+      "role": "Trưởng ban tổ chức",
+      "title": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026",
+      "org": "Bộ môn Quan hệ công chúng",
+      "category": "organizer",
+      "inGallery": true,
+      "photos": [
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Ho%E1%BA%A1%20S%E1%BA%AFc%20Trung%20Thu/_N9A0951.JPG",
+          "alt": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026, ảnh 1"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Ho%E1%BA%A1%20S%E1%BA%AFc%20Trung%20Thu/_N9A0777.JPG",
+          "alt": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026, ảnh 2"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Ho%E1%BA%A1%20S%E1%BA%AFc%20Trung%20Thu/797053812_122105244153481820_7319927417868479777_n.jpg",
+          "alt": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026, ảnh 3"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Ho%E1%BA%A1%20S%E1%BA%AFc%20Trung%20Thu/797143215_122105243535481820_5960162896023738545_n.jpg",
+          "alt": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026, ảnh 4"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Ho%E1%BA%A1%20S%E1%BA%AFc%20Trung%20Thu/797339549_122105243583481820_8752172888472982599_n.jpg",
+          "alt": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026, ảnh 5"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Ho%E1%BA%A1%20S%E1%BA%AFc%20Trung%20Thu/797339555_122105243745481820_2197300622331790660_n.jpg",
+          "alt": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026, ảnh 6"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Ho%E1%BA%A1%20S%E1%BA%AFc%20Trung%20Thu/818043985_122105244057481820_5341457787922745448_n.jpg",
+          "alt": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026, ảnh 7"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Ho%E1%BA%A1%20S%E1%BA%AFc%20Trung%20Thu/818141066_122105242983481820_131666438951157651_n.jpg",
+          "alt": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026, ảnh 8"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Ho%E1%BA%A1%20S%E1%BA%AFc%20Trung%20Thu/818554002_122105245011481820_4574772780246459438_n.jpg",
+          "alt": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026, ảnh 9"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Ho%E1%BA%A1%20S%E1%BA%AFc%20Trung%20Thu/818922412_122105245485481820_2539480925667428616_n.jpg",
+          "alt": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026, ảnh 10"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Ho%E1%BA%A1%20S%E1%BA%AFc%20Trung%20Thu/819015908_122105243031481820_8818001036393939638_n.jpg",
+          "alt": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026, ảnh 11"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Ho%E1%BA%A1%20S%E1%BA%AFc%20Trung%20Thu/819052496_122105244429481820_2406209828066987089_n.jpg",
+          "alt": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026, ảnh 12"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Ho%E1%BA%A1%20S%E1%BA%AFc%20Trung%20Thu/819147504_122105244105481820_5136202822706195172_n.jpg",
+          "alt": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026, ảnh 13"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Ho%E1%BA%A1%20S%E1%BA%AFc%20Trung%20Thu/819898370_122105244651481820_7474937372729504010_n.jpg",
+          "alt": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026, ảnh 14"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Ho%E1%BA%A1%20S%E1%BA%AFc%20Trung%20Thu/819913672_122105245155481820_6313899151759439307_n.jpg",
+          "alt": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026, ảnh 15"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Ho%E1%BA%A1%20S%E1%BA%AFc%20Trung%20Thu/819927694_122105243967481820_5643843808205228216_n.jpg",
+          "alt": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026, ảnh 16"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Ho%E1%BA%A1%20S%E1%BA%AFc%20Trung%20Thu/820479938_122105242887481820_240953602026437863_n.jpg",
+          "alt": "Workshop làm bánh dẻo “Họa Sắc Trung Thu” 2026, ảnh 17"
+        }
+      ]
+    },
+    {
+      "id": "trao-trang-cho-em",
+      "year": 2026,
+      "role": "Phó ban tổ chức",
+      "title": "Trung Thu Thiện Nguyện “Trao Trăng Cho Em”",
+      "org": "Trung tâm nuôi dạy trẻ mồ côi Hoa Mai · Bộ môn Tổ chức sự kiện",
+      "category": "organizer",
+      "inGallery": true,
+      "photos": [
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Trao%20Tr%C4%83ng%20Cho%20em/IMG_3165.JPG",
+          "alt": "Trung Thu Thiện Nguyện “Trao Trăng Cho Em”, ảnh 1"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Trao%20Tr%C4%83ng%20Cho%20em/794512864_122111009679471760_7141703618921410578_n.jpg",
+          "alt": "Trung Thu Thiện Nguyện “Trao Trăng Cho Em”, ảnh 2"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Trao%20Tr%C4%83ng%20Cho%20em/795523609_122112453393471760_3002823837472471339_n.jpg",
+          "alt": "Trung Thu Thiện Nguyện “Trao Trăng Cho Em”, ảnh 3"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Trao%20Tr%C4%83ng%20Cho%20em/796332429_122111132769471760_7102052903289243579_n.jpg",
+          "alt": "Trung Thu Thiện Nguyện “Trao Trăng Cho Em”, ảnh 4"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Trao%20Tr%C4%83ng%20Cho%20em/800130197_122111136153471760_876939681229700792_n.jpg",
+          "alt": "Trung Thu Thiện Nguyện “Trao Trăng Cho Em”, ảnh 5"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Trao%20Tr%C4%83ng%20Cho%20em/815188177_122111009625471760_6152525737973141720_n.jpg",
+          "alt": "Trung Thu Thiện Nguyện “Trao Trăng Cho Em”, ảnh 6"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Trao%20Tr%C4%83ng%20Cho%20em/817136283_122111068563471760_4270111998084257513_n.jpg",
+          "alt": "Trung Thu Thiện Nguyện “Trao Trăng Cho Em”, ảnh 7"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Trao%20Tr%C4%83ng%20Cho%20em/827209682_122116421865471760_9028349815469712253_n.jpg",
+          "alt": "Trung Thu Thiện Nguyện “Trao Trăng Cho Em”, ảnh 8"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Trao%20Tr%C4%83ng%20Cho%20em/828712262_122116422219471760_5360583202310622524_n.jpg",
+          "alt": "Trung Thu Thiện Nguyện “Trao Trăng Cho Em”, ảnh 9"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Trao%20Tr%C4%83ng%20Cho%20em/IMG_0544.JPG",
+          "alt": "Trung Thu Thiện Nguyện “Trao Trăng Cho Em”, ảnh 10"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/Trao%20Tr%C4%83ng%20Cho%20em/IMG_2963.JPG",
+          "alt": "Trung Thu Thiện Nguyện “Trao Trăng Cho Em”, ảnh 11"
+        }
+      ]
+    },
+    {
+      "id": "trang-sang-vung-cao",
+      "year": 2026,
+      "role": "Cộng tác viên thiện nguyện",
+      "title": "Thiện nguyện “Trăng sáng vùng cao 5”",
+      "org": "VNUS-DTU",
+      "category": "volunteer",
+      "inGallery": true,
+      "photos": [
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456946_2076934772382329659_6370349143950497153_a797306d9b9e70bc523c33fd80997066.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 1"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456149_2076934772382329659_6370349143950497153_a6d3c3b0abd82e70f99f41933d76229a.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 2"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456213_2076934772382329659_6370349143950497153_007f5419c4c0c302d799e73633dd228b.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 3"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456236_2076934772382329659_6370349143950497153_2f16c315802e97414fb976c71555e1e8.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 4"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456259_2076934772382329659_6370349143950497153_16204bf36aa9bce5a94506d6735a1c18.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 5"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456287_2076934772382329659_6370349143950497153_42ebe52e10ab7b49c59f80894e04b31b.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 6"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456328_2076934772382329659_6370349143950497153_ffd79fbc40f8b05c10b9f5476591e303.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 7"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456356_2076934772382329659_6370349143950497153_e4ec4db9a00df639ff64d541de236ae2.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 8"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456389_2076934772382329659_6370349143950497153_2b748888cc658ca8d72a95e78af685d4.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 9"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456421_2076934772382329659_6370349143950497153_22d46d7de8a4304713cdf92771f66513.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 10"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456446_2076934772382329659_6370349143950497153_a42734d7f9555f7cf76932493ab00e55.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 11"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456472_2076934772382329659_6370349143950497153_6b8107fa681e76d566621867c36f0e8e.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 12"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456498_2076934772382329659_6370349143950497153_d9d65ab0625fbe0c506f3ab2a8e68a57.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 13"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456525_2076934772382329659_6370349143950497153_a720737245c4b9d67ff8c38314609987.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 14"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456551_2076934772382329659_6370349143950497153_39d65212f8ff654ba17418569a575f92.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 15"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456579_2076934772382329659_6370349143950497153_64f78503b70867568096279ab7eb5e36.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 16"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456605_2076934772382329659_6370349143950497153_2d7d32de8240003259e1f977ccec4a9b.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 17"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456628_2076934772382329659_6370349143950497153_ea4c2edcaa1a13235ce08d9298c3ba53.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 18"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456654_2076934772382329659_6370349143950497153_0297bb68e91c5e9631464b8ebbc3b6a9.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 19"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456681_2076934772382329659_6370349143950497153_ab28cf7d32f422738aed8be15b9ba918.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 20"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456707_2076934772382329659_6370349143950497153_e9aaa8579a7293e61ced37fe5783e71c.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 21"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456730_2076934772382329659_6370349143950497153_b6605022cd85cf0627e8b659e2b98b09.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 22"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456752_2076934772382329659_6370349143950497153_b03fbfdb246f173452074afdfd447f40.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 23"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456774_2076934772382329659_6370349143950497153_29384c4ad4810da1b1074b55e86c858e.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 24"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456802_2076934772382329659_6370349143950497153_cea00d62674d1cc7c517b293ed2549cf.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 25"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456824_2076934772382329659_6370349143950497153_7bdea52bd6ea8fd56f4feb4651984dcf.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 26"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456848_2076934772382329659_6370349143950497153_fdff7248bb99514a930fe8415d20b898.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 27"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456872_2076934772382329659_6370349143950497153_1f6b5b16154468de43b033f13a3b7119.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 28"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456896_2076934772382329659_6370349143950497153_f999906265a0428eac91abe87f3a2978.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 29"
+        },
+        {
+          "src": "/S%E1%BB%B1%20ki%E1%BB%87n%20n%E1%BB%95i%20b%E1%BA%ADt/tr%C4%83ng%20s%C3%A1ng%20v%C3%B9ng%20cao%205/1791976456921_2076934772382329659_6370349143950497153_0e47686d93997c4e86e3c789611561ea.jpg",
+          "alt": "Thiện nguyện “Trăng sáng vùng cao 5”, ảnh 30"
+        }
+      ]
+    },
+    {
+      "id": "maker-innovation-space",
+      "year": 2026,
+      "role": "Event Management Intern",
+      "title": "Maker Innovation Space",
+      "org": "VNUK Institute of Research & Executive Education",
+      "category": "intern",
+      "inGallery": false,
+      "period": "Tháng 10 – Hiện tại",
+      "current": true,
+      "photos": []
+    }
+  ],
+  "achievements": [
+    {
+      "icon": "trophy",
+      "title": "IB-Solver’s Cup 2025",
+      "detail": "Leader nhóm EPI · DUE",
+      "badge": "Bán kết"
+    },
+    {
+      "icon": "rocket",
+      "title": "Startup Runway 2025",
+      "detail": "Thành viên nhóm FiberMedical · DUE",
+      "badge": "Bán kết"
+    },
+    {
+      "icon": "medal",
+      "title": "DTU ERPsim League 2026",
+      "detail": "Đội OPTIMINDS",
+      "badge": "Consolation Prize · Rank C"
+    },
+    {
+      "icon": "graduation",
+      "title": "Học bổng Dean’s List 2025",
+      "detail": "VNUS-DTU",
+      "badge": "Học bổng"
+    },
+    {
+      "icon": "leaf",
+      "title": "UD SIEC 2026",
+      "detail": "Đề tài “Phát triển và thương mại hoá xà phòng kháng khuẩn từ dược liệu bản địa Việt Nam (Lulasa)” lọt vòng xét chọn cuộc thi Khởi nghiệp đổi mới sáng tạo trong sinh viên",
+      "badge": "Top 38"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Google Foundation: Data, Data, Everywhere",
+      "detail": "Tháng 11/2025"
+    },
+    {
+      "title": "Google Certified Educator Level 1",
+      "detail": "12/2025 – 12/2028"
+    }
+  ],
+  "languages": [
+    "Tiếng Anh",
+    "Tiếng Trung HSK 2",
+    "Tiếng Việt"
+  ],
+  "contacts": {
+    "email": "Hmaiphuongworkmail@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/h%E1%BB%93-mai-ph%C6%B0%C6%A1ng-973496391",
+    "facebook": "https://www.facebook.com/mai.phuong.569078/?locale=vi_VN",
+    "whatsappDisplay": "0799402152",
+    "whatsappLink": "https://wa.me/84799402152",
+    "phones": [
+      "0559527963",
+      "0799402152"
+    ]
+  }
+}

@@ -7,8 +7,12 @@ import { Hero } from '@/components/site/hero'
 import { ScrollRuler } from '@/components/site/scroll-ruler'
 import { Highlights } from '@/components/site/highlights'
 import { SiteNav } from '@/components/site/site-nav'
+import { getSiteContent } from '@/lib/content-store'
 
-export default function Page() {
+export const dynamic = 'force-dynamic'
+
+export default async function Page() {
+  const content = await getSiteContent()
   return (
     <>
       <a
@@ -17,23 +21,23 @@ export default function Page() {
       >
         Bỏ qua điều hướng
       </a>
-      <SiteNav />
+      <SiteNav copy={content.copy} />
       <ScrollRuler />
       <main id="main">
-        <Hero />
-        <Highlights />
+        <Hero profile={content.profile} copy={content.copy} events={content.events} />
+        <Highlights items={content.highlights} events={content.events} copy={content.copy.highlights} />
         <section id="about" aria-labelledby="about-title" className="scroll-mt-14">
-          <AboutStory />
-          <Experience />
+          <AboutStory chapters={content.storyChapters} goals={content.goals} stats={content.stats} copy={content.copy} />
+          <Experience events={content.events} achievements={content.achievements} certificates={content.certificates} languages={content.languages} copy={content.copy} />
         </section>
         <section id="gallery" aria-labelledby="gallery-title" className="scroll-mt-14">
-          <Gallery />
+          <Gallery events={content.events} copy={content.copy.gallery} />
         </section>
         <section id="contact" aria-labelledby="contact-title" className="scroll-mt-14">
-          <Contact />
+          <Contact contacts={content.contacts} copy={content.copy.contact} />
         </section>
       </main>
-      <Footer />
+      <Footer text={content.copy.footer} backToTop={content.copy.backToTop} />
     </>
   )
 }

@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { ChevronLeft, ChevronRight, ImageOff, X } from 'lucide-react'
 import { categoryLabel, type EventItem } from '@/lib/content'
 import { cn } from '@/lib/utils'
+import { ContentMedia } from './content-media'
 
 interface AlbumViewerProps {
   album: EventItem | null
@@ -146,13 +147,11 @@ export function AlbumViewer({ album, onClose }: AlbumViewerProps) {
                   onPointerUp={onPointerUp}
                   onPointerCancel={() => (swipeStart.current = null)}
                 >
-                  <Image
+                  <ContentMedia
                     key={photo.src}
-                    src={photo.src}
-                    alt={photo.alt ?? `${album.title}, ảnh ${index + 1}`}
-                    fill
+                    media={{ ...photo, alt: photo.alt ?? `${album.title}, ảnh ${index + 1}` }}
+                    controls={photo.type === 'video'}
                     sizes="(min-width: 1152px) 1152px, 100vw"
-                    draggable={false}
                     className="animate-in fade-in zoom-in-[0.98] object-contain duration-300"
                   />
                   {total > 1 && (
@@ -180,7 +179,7 @@ export function AlbumViewer({ album, onClose }: AlbumViewerProps) {
                             active ? 'opacity-100 ring-2 ring-rose ring-offset-2 ring-offset-ink' : 'opacity-45 hover:opacity-80',
                           )}
                         >
-                          <Image src={item.src} alt="" fill sizes="96px" className="object-cover" />
+                          <ContentMedia media={{ ...item, alt: '' }} sizes="96px" className="object-cover" />
                           <span className="sr-only">Xem ảnh {itemIndex + 1}</span>
                         </button>
                       </li>

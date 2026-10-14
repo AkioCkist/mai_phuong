@@ -2,16 +2,16 @@
 
 import { useEffect, useState } from 'react'
 import { cn } from '@/lib/utils'
+import type { SiteCopy } from '@/lib/content'
 
-const links = [
-  { id: 'home', label: 'Home' },
-  { id: 'highlights', label: 'Events' },
-  { id: 'about', label: 'About' },
-  { id: 'gallery', label: 'Gallery' },
-  { id: 'contact', label: 'Contact' },
-]
-
-export function SiteNav() {
+export function SiteNav({ copy }: { copy: SiteCopy }) {
+  const links = [
+    { id: 'home', label: copy.navHome },
+    { id: 'highlights', label: copy.navEvents },
+    { id: 'about', label: copy.navAbout },
+    { id: 'gallery', label: copy.navGallery },
+    { id: 'contact', label: copy.navContact },
+  ]
   const [active, setActive] = useState('home')
 
   useEffect(() => {
@@ -41,7 +41,7 @@ export function SiteNav() {
           href="#home"
           className="hidden font-display text-lg font-bold tracking-tight text-ink transition-colors hover:text-rose sm:block"
         >
-          Calliope<span className="text-rose">.</span>
+          {copy.navBrand}
         </a>
         <ul className="flex w-full items-center justify-between gap-1 sm:w-auto sm:justify-end sm:gap-2">
           {links.map((link) => {

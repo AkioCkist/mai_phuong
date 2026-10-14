@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { ArrowUpRight, Check, Copy } from 'lucide-react'
-import { contacts } from '@/lib/content'
+import type { ContactInfo, SectionCopy } from '@/lib/content'
 import { cn } from '@/lib/utils'
 import { SectionHeading } from './section-heading'
 
@@ -14,25 +14,13 @@ interface ContactRow {
   copyValue?: string
 }
 
-const rows: ContactRow[] = [
-  {
-    label: 'WhatsApp',
-    value: `${contacts.whatsappDisplay} – Mai Phương`,
-    href: contacts.whatsappLink,
-    external: true,
-    copyValue: contacts.whatsappDisplay,
-  },
-  {
-    label: 'Số điện thoại',
-    value: contacts.phones.join(' · '),
-    href: `tel:${contacts.phones[0]}`,
-    copyValue: contacts.phones[0],
-  },
-  { label: 'LinkedIn', value: 'Hồ Mai Phương', href: contacts.linkedin, external: true },
-  { label: 'Facebook', value: 'Mai Phương', href: contacts.facebook, external: true },
-]
-
-export function Contact() {
+export function Contact({ contacts, copy: sectionCopy }: { contacts: ContactInfo; copy: SectionCopy }) {
+  const rows: ContactRow[] = [
+    { label: 'WhatsApp', value: contacts.whatsappDisplay, href: contacts.whatsappLink, external: true, copyValue: contacts.whatsappDisplay },
+    { label: 'Số điện thoại', value: contacts.phones.join(' · '), href: `tel:${contacts.phones[0] ?? ''}`, copyValue: contacts.phones[0] },
+    { label: 'LinkedIn', value: 'LinkedIn', href: contacts.linkedin, external: true },
+    { label: 'Facebook', value: 'Facebook', href: contacts.facebook, external: true },
+  ]
   const [copied, setCopied] = useState<string | null>(null)
 
   async function copy(label: string, value: string) {
@@ -72,9 +60,9 @@ export function Contact() {
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           id="contact-title"
-          label="Contact"
-          title="Cùng làm một điều gì đó nhé"
-          description="Nếu bạn muốn cùng làm một điều gì đó, nhắn mình một tiếng nhé."
+          label={sectionCopy.label}
+          title={sectionCopy.title}
+          description={sectionCopy.description}
         />
 
         <div className="mt-10 flex flex-wrap items-center gap-x-4 gap-y-2">

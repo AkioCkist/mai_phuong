@@ -102,7 +102,7 @@ export type EventCategory =
 
 export interface EventItem {
   id: string
-  year: 2024 | 2025 | 2026
+  year: number
   role: string
   title: string
   org?: string
@@ -120,10 +120,104 @@ export interface EventItem {
 
 export interface Photo {
   src: string
+  /** Loại media; dữ liệu cũ không có trường này được xem là ảnh. */
+  type?: 'image' | 'video'
   /** Mô tả ảnh cho người dùng trình đọc màn hình. */
   alt?: string
   /** Chú thích hiện dưới ảnh trong popup. */
   caption?: string
+}
+
+export interface SectionCopy {
+  label: string
+  title: string
+  description?: string
+}
+
+export interface SiteCopy {
+  siteTitle: string
+  siteDescription: string
+  navBrand: string
+  navHome: string
+  navEvents: string
+  navAbout: string
+  navGallery: string
+  navContact: string
+  backToTop: string
+  heroEyebrow: string
+  heroSpecialties: string
+  heroPrimaryCta: string
+  heroSecondaryCta: string
+  heroMedia: Photo
+  storyMedia: Photo
+  highlights: SectionCopy
+  about: SectionCopy
+  aboutGoalsLabel: string
+  experience: SectionCopy
+  achievements: SectionCopy
+  certificatesLabel: string
+  languagesLabel: string
+  gallery: SectionCopy
+  contact: SectionCopy
+  footer: string
+}
+
+export interface HighlightItem {
+  eventId: string
+  title: string
+  meta: string
+  text: string
+}
+
+export interface StoryChapter {
+  label: string
+  text: string
+}
+
+export interface GoalItem {
+  horizon: string
+  role: string
+  text: string
+}
+
+export interface StatItem {
+  value: string
+  label: string
+}
+
+export interface AchievementItem {
+  icon: string
+  title: string
+  detail: string
+  badge: string
+}
+
+export interface CertificateItem {
+  title: string
+  detail: string
+}
+
+export interface ContactInfo {
+  email: string
+  linkedin: string
+  facebook: string
+  whatsappDisplay: string
+  whatsappLink: string
+  phones: string[]
+}
+
+export interface SiteContent {
+  profile: typeof profile
+  copy: SiteCopy
+  highlights: HighlightItem[]
+  storyChapters: StoryChapter[]
+  goals: GoalItem[]
+  stats: StatItem[]
+  events: EventItem[]
+  achievements: AchievementItem[]
+  certificates: CertificateItem[]
+  languages: string[]
+  contacts: ContactInfo
 }
 
 export const categoryLabel: Record<EventCategory, string> = {
@@ -336,4 +430,71 @@ export const contacts = {
   whatsappDisplay: '0799402152',
   whatsappLink: 'https://wa.me/84799402152',
   phones: ['0559527963', '0799402152'],
+}
+
+export const copy: SiteCopy = {
+  siteTitle: 'Mai Phương (Calliope) — Portfolio',
+  siteDescription:
+    'Portfolio của Mai Phương (Calliope): sinh viên Quản trị kinh doanh, làm sự kiện, truyền thông và Hành chính – Nhân sự.',
+  navBrand: 'Calliope.',
+  navHome: 'Home',
+  navEvents: 'Events',
+  navAbout: 'About',
+  navGallery: 'Gallery',
+  navContact: 'Contact',
+  backToTop: 'Về đầu trang',
+  heroEyebrow: 'Portfolio · 2026',
+  heroSpecialties: 'Event · Truyền thông · HR Admin',
+  heroPrimaryCta: 'Xem hành trình của mình',
+  heroSecondaryCta: 'Nhắn mình nhé',
+  heroMedia: {
+    src: encodeURI('/Ảnh chính/Ảnh Bìa.jpg'),
+    type: 'image',
+    alt: 'Chân dung Mai Phương tại một sự kiện ngoài trời',
+  },
+  storyMedia: {
+    src: encodeURI('/Ảnh câu chuyện của mình/Ảnh hero.jpg'),
+    type: 'image',
+    alt: 'Mai Phương cầm máy ảnh giữa khung cảnh núi và mây',
+  },
+  highlights: {
+    label: 'Highlights',
+    title: 'Các sự kiện nổi bật',
+    description: 'Sáu dấu mốc mình nhớ nhất, từ sự kiện đầu tiên đến mùa Trung thu năm nay.',
+  },
+  about: {
+    label: 'About',
+    title: 'Câu chuyện của mình',
+    description: 'Mình chưa bao giờ giỏi giới thiệu bản thân, nên mình kể bằng cách này.',
+  },
+  aboutGoalsLabel: 'Mình muốn đi về đâu',
+  experience: { label: 'Experience', title: 'Kinh nghiệm', description: 'Mới nhất ở trên cùng.' },
+  achievements: { label: 'Certificate & Achievement', title: 'Giải thưởng' },
+  certificatesLabel: 'Chứng chỉ',
+  languagesLabel: 'Ngôn ngữ',
+  gallery: {
+    label: 'Gallery',
+    title: 'Những chương trình đã làm',
+    description: 'Những chương trình mình đã cùng làm, theo từng năm.',
+  },
+  contact: {
+    label: 'Contact',
+    title: 'Cùng làm một điều gì đó nhé',
+    description: 'Nếu bạn muốn cùng làm một điều gì đó, nhắn mình một tiếng nhé.',
+  },
+  footer: 'Mai Phương – Calliope · 2026',
+}
+
+export const defaultSiteContent: SiteContent = {
+  profile,
+  copy,
+  highlights: [...highlights],
+  storyChapters: [...storyChapters],
+  goals: [...goals],
+  stats: [...stats],
+  events,
+  achievements: achievements.map((item) => ({ ...item })),
+  certificates: [...certificates],
+  languages: [...languages],
+  contacts,
 }

@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Be_Vietnam_Pro, Fraunces, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
+import { getSiteContent } from '@/lib/content-store'
 
 const display = Fraunces({
   subsets: ['latin', 'latin-ext', 'vietnamese'],
@@ -23,15 +24,13 @@ const mono = JetBrains_Mono({
   display: 'swap',
 })
 
-export const metadata: Metadata = {
-  title: 'Mai Phương (Calliope) — Portfolio',
-  description:
-    'Portfolio của Mai Phương (Calliope): sinh viên Quản trị kinh doanh, làm sự kiện, truyền thông và Hành chính – Nhân sự. Nơi gom lại những gì mình đã làm.',
-  generator: 'v0.app',
-  icons: {
-    icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
-    apple: '/apple-icon.png',
-  },
+export async function generateMetadata(): Promise<Metadata> {
+  const { copy } = await getSiteContent()
+  return {
+    title: copy.siteTitle,
+    description: copy.siteDescription,
+    icons: { icon: [{ url: '/icon.svg', type: 'image/svg+xml' }], apple: '/apple-icon.png' },
+  }
 }
 
 export const viewport: Viewport = {

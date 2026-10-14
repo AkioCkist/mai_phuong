@@ -1,21 +1,21 @@
-import Image from 'next/image'
-import { events, highlights } from '@/lib/content'
+import type { EventItem, HighlightItem, SectionCopy } from '@/lib/content'
 import { Reveal } from './reveal'
 import { SectionHeading } from './section-heading'
+import { ContentMedia } from './content-media'
 
-export function Highlights() {
+export function Highlights({ items, events, copy }: { items: HighlightItem[]; events: EventItem[]; copy: SectionCopy }) {
   return (
     <section id="highlights" aria-labelledby="highlights-title" className="scroll-mt-16 px-4 pb-24 sm:px-8">
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           id="highlights-title"
-          label="Highlights"
-          title="Các sự kiện nổi bật"
-          description="Sáu dấu mốc mình nhớ nhất, từ sự kiện đầu tiên đến mùa Trung thu năm nay."
+          label={copy.label}
+          title={copy.title}
+          description={copy.description}
         />
 
         <ol className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {highlights.map((item, index) => {
+          {items.map((item, index) => {
             const event = events.find((candidate) => candidate.id === item.eventId)
             const cover = event?.photos?.[0]
             return (
@@ -23,10 +23,8 @@ export function Highlights() {
                 <article className="ticket group flex h-full flex-col bg-sheet transition-transform duration-200 ease-out hover:-translate-y-1">
                   {cover && (
                     <div className="relative aspect-[16/10] overflow-hidden rounded-t-xl border border-b-0 border-line bg-petal">
-                      <Image
-                        src={cover.src}
-                        alt=""
-                        fill
+                      <ContentMedia
+                        media={cover}
                         sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw"
                         className="object-cover"
                       />

@@ -1,15 +1,14 @@
-import { achievements, certificates, events, languages } from '@/lib/content'
+import type { AchievementItem, CertificateItem, EventItem, SiteCopy } from '@/lib/content'
 import { SectionHeading } from './section-heading'
 
-const years = [2026, 2025, 2024] as const
-
-export function Experience() {
+export function Experience({ events, achievements, certificates, languages, copy }: { events: EventItem[]; achievements: AchievementItem[]; certificates: CertificateItem[]; languages: string[]; copy: SiteCopy }) {
+  const years = [...new Set(events.map((event) => event.year))].sort((a, b) => b - a)
   return (
     <div className="border-y border-line bg-sheet px-4 py-24 sm:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="grid gap-20 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-16">
           <section aria-labelledby="exp-title">
-            <SectionHeading id="exp-title" label="Experience" title="Kinh nghiệm" description="Mới nhất ở trên cùng." />
+            <SectionHeading id="exp-title" {...copy.experience} />
 
             <div className="mt-10 flex flex-col gap-12">
               {years.map((year) => {
@@ -47,7 +46,7 @@ export function Experience() {
           </section>
 
           <section aria-labelledby="achievements-title" className="lg:sticky lg:top-20 lg:self-start">
-            <SectionHeading id="achievements-title" label="Certificate & Achievement" title="Giải thưởng" />
+            <SectionHeading id="achievements-title" {...copy.achievements} />
 
             <ul className="mt-10 flex flex-col">
               {achievements.map((item) => (
@@ -63,7 +62,7 @@ export function Experience() {
 
             <div className="mt-10 grid gap-8 rounded-xl bg-paper p-6 sm:grid-cols-2">
               <div>
-                <h3 className="label-mono text-mauve">Chứng chỉ</h3>
+                <h3 className="label-mono text-mauve">{copy.certificatesLabel}</h3>
                 <ul className="mt-3 flex flex-col gap-3">
                   {certificates.map((cert) => (
                     <li key={cert.title}>
@@ -74,7 +73,7 @@ export function Experience() {
                 </ul>
               </div>
               <div>
-                <h3 className="label-mono text-mauve">Ngôn ngữ</h3>
+                <h3 className="label-mono text-mauve">{copy.languagesLabel}</h3>
                 <ul className="mt-3 flex flex-wrap gap-2">
                   {languages.map((language) => (
                     <li key={language} className="rounded-md border border-line bg-sheet px-2.5 py-1 text-sm font-medium text-ink">
