@@ -1,10 +1,11 @@
 export type StorageMode = 'blob' | 'local'
 
 export function hasBlobCredentials() {
-  return Boolean(
-    process.env.BLOB_READ_WRITE_TOKEN ||
-      (process.env.BLOB_STORE_ID && process.env.VERCEL_OIDC_TOKEN),
-  )
+  // VERCEL_OIDC_TOKEN is injected and rotated at runtime, so it is not a
+  // reliable deployment-time capability check. A connected store exposes its
+  // BLOB_STORE_ID; the SDK resolves the short-lived OIDC token when it calls
+  // Blob. Keep the static token as a local-development fallback.
+  return Boolean(process.env.BLOB_STORE_ID || process.env.BLOB_READ_WRITE_TOKEN)
 }
 
 export function storageMode(): StorageMode {

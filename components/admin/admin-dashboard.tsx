@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useEffect, useState, type ChangeEvent, type ReactNode } from 'react'
 import { AlertDialog } from '@base-ui/react/alert-dialog'
-import { upload as uploadToBlob } from '@vercel/blob/client'
+import { uploadPresigned as uploadToBlob } from '@vercel/blob/client'
 import { useRouter } from 'next/navigation'
 import { Check, ExternalLink, LoaderCircle, LogOut, Plus, Save, Trash2, Upload } from 'lucide-react'
 import type { EventCategory, Photo, SiteContent } from '@/lib/content'

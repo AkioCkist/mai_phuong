@@ -1,4 +1,8 @@
-import { handleUpload, type HandleUploadBody } from '@vercel/blob/client'
+import { issueSignedToken } from '@vercel/blob'
+import {
+  handleUploadPresigned,
+  type HandleUploadPresignedBody,
+} from '@vercel/blob/client'
 import { NextRequest, NextResponse } from 'next/server'
 import { isRequestAuthenticated, isSameOrigin } from '@/lib/admin-auth'
 
@@ -14,19 +18,32 @@ const allowedContentTypes = [
 ]
 
 export async function POST(request: NextRequest) {
-  const body = (await request.json()) as HandleUploadBody
+  const body = (await request.json()) as HandleUploadPresignedBody
   try {
-    const response = await handleUpload({
+    const response = await handleUploadPresigned({
       body,
       request,
-      onBeforeGenerateToken: async () => {
+      getSignedToken: async (pathname) => {
         if (!isRequestAuthenticated(request)) throw new Error('Phiên đăng nhập đã hết hạn.')
         if (!isSameOrigin(request)) throw new Error('Yêu cầu không hợp lệ.')
         const maxMb = Math.max(1, Number(process.env.MAX_UPLOAD_MB) || 100)
+        const maximumSizeInBytes = maxMb * 1024 * 1024
+        const validUntil = Date.now() + 10 * 60 * 1000
         return {
-          allowedContentTypes,
-          maximumSizeInBytes: maxMb * 1024 * 1024,
-          addRandomSuffix: true,
+          token: await issueSignedToken({
+            pathname,
+            operations: ['put'],
+            allowedContentTypes,
+            maximumSizeInBytes,
+            validUntil,
+          }),
+          urlOptions: {
+            allowedContentTypes,
+            maximumSizeInBytes,
+            validUntil,
+            addRandomSuffix: true,
+            allowOverwrite: false,
+          },
         }
       },
       onUploadCompleted: async () => {},
