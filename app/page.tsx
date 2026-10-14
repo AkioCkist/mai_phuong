@@ -4,6 +4,7 @@ import { Experience } from '@/components/site/experience'
 import { Footer } from '@/components/site/footer'
 import { Gallery } from '@/components/site/gallery'
 import { Hero } from '@/components/site/hero'
+import { ScrollRuler } from '@/components/site/scroll-ruler'
 import { Highlights } from '@/components/site/highlights'
 import { SiteNav } from '@/components/site/site-nav'
 
@@ -17,6 +18,7 @@ export default function Page() {
         Bỏ qua điều hướng
       </a>
       <SiteNav />
+      <ScrollRuler />
       <main id="main">
         <Hero />
         <Highlights />
