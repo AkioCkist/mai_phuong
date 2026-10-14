@@ -49,12 +49,12 @@ export function Hero() {
           <figure className="relative order-1 animate-settle [animation-delay:200ms] lg:order-2">
             <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-[#f9ecdf]">
               <Image
-                src="/images/mascot.png"
-                alt="Calliope, nhân vật hoạt hình đeo kính tròn, ôm thanh phô mai que hồng giữa những đám mây"
+                src={encodeURI('/Ảnh chính/Ảnh Bìa.jpg')}
+                alt="Chân dung Mai Phương tại một sự kiện ngoài trời"
                 fill
                 priority
                 sizes="(min-width: 1024px) 620px, 100vw"
-                className="object-cover"
+                className="object-cover object-center"
               />
             </div>
             <Image

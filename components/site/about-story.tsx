@@ -19,11 +19,11 @@ export function AboutStory() {
           <StickyBounce className="lg:sticky lg:top-24 lg:self-start">
             <div className="relative mx-auto aspect-[4/5] max-w-xs overflow-hidden rounded-2xl bg-[#f9ecdf] lg:max-w-none">
               <Image
-                src="/images/mascot.png"
-                alt="Nhân vật Calliope đang ôm thanh phô mai que hồng"
+                src={encodeURI('/Ảnh câu chuyện của mình/Ảnh hero.jpg')}
+                alt="Mai Phương cầm máy ảnh giữa khung cảnh núi và mây"
                 fill
                 sizes="(min-width: 1024px) 300px, 320px"
-                className="object-cover object-[52%_50%] transition-transform duration-700 ease-out-soft hover:scale-[1.04]"
+                className="object-cover object-center"
               />
             </div>
 

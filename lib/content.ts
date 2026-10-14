@@ -1,3 +1,5 @@
+import { eventPhotos } from './gallery-photos'
+
 export const profile = {
   name: 'Mai Phương',
   nickname: 'Calliope',
@@ -7,31 +9,37 @@ export const profile = {
 
 export const highlights = [
   {
+    eventId: 'u-invent-7',
     title: 'U-invent 7 – Innovation for a safer future',
     meta: 'VNUK x UNICEF · 2024',
     text: 'Tình nguyện viên truyền thông & đối ngoại. Sự kiện đầu tiên của mình, nơi mình biết mình mê cảm giác đứng sau sân khấu.',
   },
   {
+    eventId: 'impact-innovation-bootcamp',
     title: 'Impact Innovation Bootcamp 2025',
     meta: 'Bệnh viện 199 x VNUK x Greenwich x Rainscales',
     text: 'Ban tổ chức. Phối hợp nhiều đơn vị đối tác trong một chương trình đổi mới sáng tạo.',
   },
   {
+    eventId: 'img-gx-summit',
     title: 'IMG GX Leadership Convergence Summit Vietnam 2026',
     meta: 'BACKSTAGE · 2026',
     text: 'Helper backstage. Làm việc cùng đội ngũ BACKSTAGE chuyên nghiệp, học cách giữ nhịp khi mọi thứ diễn ra rất nhanh.',
   },
   {
+    eventId: 'tu-nong-truong',
     title: 'Lễ ra mắt dự án & talkshow “Từ Nông Trường, ra thị trường”',
     meta: 'JCI Hội An, Global Gateway x VNUK · 2026',
     text: 'Ban tổ chức. Một sự kiện kết nối nông sản địa phương với thị trường.',
   },
   {
+    eventId: 'toa-soan-xanh',
     title: 'Tòa Soạn Xanh Đà Nẵng',
     meta: 'UNICEF x VNUK · 2026',
     text: 'Mentor sinh viên ban tin tức. Đồng hành cùng các bạn trẻ làm tin và kể chuyện.',
   },
   {
+    eventId: 'hoa-sac-trung-thu',
     title: 'Trung thu 2026',
     meta: 'Workshop & thiện nguyện',
     text: 'Trưởng ban tổ chức Workshop làm bánh dẻo “Họa Sắc Trung Thu” và Phó ban tổ chức chương trình thiện nguyện “Trao Trăng Cho Em” tại Trung tâm nuôi dạy trẻ mồ côi Hoa Mai.',
@@ -128,7 +136,7 @@ export const categoryLabel: Record<EventCategory, string> = {
   intern: 'Thực tập',
 }
 
-export const events: EventItem[] = [
+const eventItems: EventItem[] = [
   {
     id: 'u-invent-7',
     year: 2024,
@@ -140,11 +148,11 @@ export const events: EventItem[] = [
   },
   {
     id: 'champion-press',
-    year: 2025,
-    role: 'Tình nguyện viên hậu cần',
-    title: 'Champion Press',
-    org: 'VNUK x UNICEF',
-    category: 'logistics',
+    year: 2026,
+    role: 'Ban tổ chức',
+    title: 'Workshop Design thinking workshop: “start your business with a paper”',
+    org: 'VNUK x Wildcats',
+    category: 'media',
     inGallery: true,
   },
   {
@@ -197,15 +205,6 @@ export const events: EventItem[] = [
     title: 'IMG GX Leadership Convergence Summit Vietnam 2026',
     org: 'Backstage company',
     category: 'backstage',
-    inGallery: true,
-  },
-  {
-    id: 'innovation-school-tour',
-    year: 2026,
-    role: 'Ban tổ chức',
-    title: 'Innovation School Tour 2026',
-    org: 'UNICEF x VNUK',
-    category: 'organizer',
     inGallery: true,
   },
   {
@@ -269,7 +268,7 @@ export const events: EventItem[] = [
     title: 'Thiện nguyện “Trăng sáng vùng cao 5”',
     org: 'VNUS-DTU',
     category: 'volunteer',
-    inGallery: false,
+    inGallery: true,
   },
   {
     id: 'maker-innovation-space',
@@ -283,6 +282,11 @@ export const events: EventItem[] = [
     current: true,
   },
 ]
+
+export const events: EventItem[] = eventItems.map((event) => ({
+  ...event,
+  photos: eventPhotos(event.id, event.title),
+}))
 
 export const achievements = [
   {
