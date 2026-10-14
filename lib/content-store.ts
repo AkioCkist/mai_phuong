@@ -1,10 +1,13 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
+import { get, put } from '@vercel/blob'
 import { defaultSiteContent, type SiteContent } from './content'
+import { assertWritableStorage, hasBlobCredentials } from './storage-mode'
 
 const contentFile = process.env.CONTENT_DATA_PATH
   ? path.resolve(process.env.CONTENT_DATA_PATH)
   : path.join(process.cwd(), 'data', 'site-content.json')
+const blobPathname = 'cms/site-content.json'
 
 function cloneDefaults(): SiteContent {
   return JSON.parse(JSON.stringify(defaultSiteContent)) as SiteContent
@@ -40,6 +43,18 @@ function withDefaults(stored: SiteContent): SiteContent {
 }
 
 export async function getSiteContent(): Promise<SiteContent> {
+  if (hasBlobCredentials()) {
+    try {
+      const result = await get(blobPathname, { access: 'public', useCache: false })
+      if (result?.statusCode === 200 && result.stream) {
+        const stored = JSON.parse(await new Response(result.stream).text()) as unknown
+        if (isSiteContent(stored)) return withDefaults(stored)
+      }
+    } catch (error) {
+      console.error('Không thể đọc nội dung từ Vercel Blob:', error)
+    }
+  }
+
   try {
     const stored = JSON.parse(await readFile(contentFile, 'utf8')) as unknown
     return isSiteContent(stored) ? withDefaults(stored) : cloneDefaults()
@@ -56,6 +71,18 @@ export async function saveSiteContent(value: unknown): Promise<SiteContent> {
   if (Buffer.byteLength(serialized, 'utf8') > 2_000_000) {
     throw new Error('Dữ liệu nội dung vượt quá giới hạn 2 MB.')
   }
+
+  if (hasBlobCredentials()) {
+    await put(blobPathname, `${serialized}\n`, {
+      access: 'public',
+      allowOverwrite: true,
+      cacheControlMaxAge: 60,
+      contentType: 'application/json; charset=utf-8',
+    })
+    return value
+  }
+
+  assertWritableStorage()
   await mkdir(path.dirname(contentFile), { recursive: true })
   await writeFile(contentFile, `${serialized}\n`, 'utf8')
   return value

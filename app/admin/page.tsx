@@ -3,6 +3,7 @@ import { AdminDashboard } from '@/components/admin/admin-dashboard'
 import { AdminLogin } from '@/components/admin/admin-login'
 import { isAdminAuthenticated, isPinConfigured } from '@/lib/admin-auth'
 import { getSiteContent } from '@/lib/content-store'
+import { storageMode } from '@/lib/storage-mode'
 
 export const dynamic = 'force-dynamic'
 
@@ -15,6 +16,6 @@ export default async function AdminPage() {
   const configured = isPinConfigured()
   const authenticated = configured && (await isAdminAuthenticated())
   if (!authenticated) return <AdminLogin configured={configured} />
-  return <AdminDashboard initialContent={await getSiteContent()} />
+  return <AdminDashboard initialContent={await getSiteContent()} storageMode={storageMode()} />
 }
 

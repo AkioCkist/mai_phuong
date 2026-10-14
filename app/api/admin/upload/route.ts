@@ -1,8 +1,10 @@
 import { randomUUID } from 'node:crypto'
 import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
+import { put } from '@vercel/blob'
 import { NextRequest, NextResponse } from 'next/server'
 import { isRequestAuthenticated, isSameOrigin } from '@/lib/admin-auth'
+import { assertWritableStorage, hasBlobCredentials } from '@/lib/storage-mode'
 
 const allowed = new Set([
   'image/jpeg',
@@ -42,11 +44,26 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: `Tệp vượt quá giới hạn ${maxMb} MB.` }, { status: 413 })
   }
 
+  const filename = `${Date.now()}-${randomUUID()}.${extensions[file.type]}`
+  if (hasBlobCredentials()) {
+    const blob = await put(`uploads/${filename}`, file, {
+      access: 'public',
+      contentType: file.type,
+      addRandomSuffix: false,
+      multipart: file.size > 4 * 1024 * 1024,
+    })
+    return NextResponse.json({
+      src: blob.url,
+      type: file.type.startsWith('video/') ? 'video' : 'image',
+      originalName: file.name,
+    })
+  }
+
+  assertWritableStorage()
   const uploadRoot = process.env.UPLOAD_DIR
     ? path.resolve(process.env.UPLOAD_DIR)
     : path.join(process.cwd(), 'public', 'uploads')
   await mkdir(uploadRoot, { recursive: true })
-  const filename = `${Date.now()}-${randomUUID()}.${extensions[file.type]}`
   await writeFile(path.join(uploadRoot, filename), Buffer.from(await file.arrayBuffer()))
   return NextResponse.json({
     src: `/uploads/${filename}`,

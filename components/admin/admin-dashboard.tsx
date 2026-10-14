@@ -1,11 +1,13 @@
 'use client'
 
-import { useEffect, useState, type ChangeEvent, type ReactNode } from 'react'
+import { createContext, useContext, useEffect, useState, type ChangeEvent, type ReactNode } from 'react'
 import { AlertDialog } from '@base-ui/react/alert-dialog'
+import { upload as uploadToBlob } from '@vercel/blob/client'
 import { useRouter } from 'next/navigation'
 import { Check, ExternalLink, LoaderCircle, LogOut, Plus, Save, Trash2, Upload } from 'lucide-react'
 import type { EventCategory, Photo, SiteContent } from '@/lib/content'
 import { cn } from '@/lib/utils'
+import type { StorageMode } from '@/lib/storage-mode'
 
 type Section = 'general' | 'highlights' | 'story' | 'events' | 'credentials' | 'contact'
 type FieldKind = 'text' | 'textarea' | 'number' | 'checkbox' | 'select'
@@ -32,8 +34,9 @@ const categoryOptions: { value: EventCategory; label: string }[] = [
 ]
 
 const inputClass = 'mt-1.5 min-h-11 w-full rounded-lg border border-line bg-paper px-3 text-sm text-ink outline-none focus:border-rose focus:ring-2 focus:ring-rose/20'
+const StorageModeContext = createContext<StorageMode>('local')
 
-export function AdminDashboard({ initialContent }: { initialContent: SiteContent }) {
+export function AdminDashboard({ initialContent, storageMode }: { initialContent: SiteContent; storageMode: StorageMode }) {
   const router = useRouter()
   const [content, setContent] = useState(initialContent)
   const [active, setActive] = useState<Section>('general')
@@ -83,6 +86,7 @@ export function AdminDashboard({ initialContent }: { initialContent: SiteContent
   }
 
   return (
+    <StorageModeContext.Provider value={storageMode}>
     <main className="min-h-dvh bg-paper text-ink">
       <header className="sticky top-0 z-40 border-b border-line bg-paper/95">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-8">
@@ -134,6 +138,7 @@ export function AdminDashboard({ initialContent }: { initialContent: SiteContent
         </div>
       </div>
     </main>
+    </StorageModeContext.Provider>
   )
 }
 
@@ -147,6 +152,7 @@ function Field({ label, value, onChange, kind = 'text', options, placeholder }: 
 }
 
 function MediaField({ label, media, onChange }: { label: string; media: Photo; onChange: (media: Photo) => void }) {
+  const storageMode = useContext(StorageModeContext)
   const [uploading, setUploading] = useState(false)
   const [error, setError] = useState('')
   async function upload(event: ChangeEvent<HTMLInputElement>) {
@@ -154,11 +160,21 @@ function MediaField({ label, media, onChange }: { label: string; media: Photo; o
     if (!file) return
     setUploading(true); setError('')
     try {
-      const form = new FormData(); form.append('file', file)
-      const response = await fetch('/api/admin/upload', { method: 'POST', body: form })
-      const result = (await response.json()) as { src?: string; type?: 'image' | 'video'; originalName?: string; error?: string }
-      if (!response.ok || !result.src) throw new Error(result.error || 'Không thể upload.')
-      onChange({ ...media, src: result.src, type: result.type, alt: media.alt || result.originalName || '' })
+      if (storageMode === 'blob') {
+        const safeName = file.name.replace(/[^a-zA-Z0-9._-]+/g, '-')
+        const blob = await uploadToBlob(`uploads/${safeName}`, file, {
+          access: 'public',
+          handleUploadUrl: '/api/admin/upload/blob',
+          multipart: file.size > 4 * 1024 * 1024,
+        })
+        onChange({ ...media, src: blob.url, type: file.type.startsWith('video/') ? 'video' : 'image', alt: media.alt || file.name })
+      } else {
+        const form = new FormData(); form.append('file', file)
+        const response = await fetch('/api/admin/upload', { method: 'POST', body: form })
+        const result = (await response.json()) as { src?: string; type?: 'image' | 'video'; originalName?: string; error?: string }
+        if (!response.ok || !result.src) throw new Error(result.error || 'Không thể upload.')
+        onChange({ ...media, src: result.src, type: result.type, alt: media.alt || result.originalName || '' })
+      }
     } catch (cause) { setError(cause instanceof Error ? cause.message : 'Không thể upload.') } finally { setUploading(false); event.target.value = '' }
   }
   return <div className="rounded-lg border border-line bg-paper p-3"><p className="text-sm font-semibold">{label}</p>{media.src && <div className="mt-3 aspect-video max-w-sm overflow-hidden rounded-lg bg-petal">{media.type === 'video' ? <video src={media.src} controls className="size-full object-cover" /> : <img src={media.src} alt={media.alt || ''} className="size-full object-cover" />}</div>}<div className="mt-3 grid gap-3 sm:grid-cols-2"><Field label="Đường dẫn" value={media.src} onChange={(src) => onChange({ ...media, src: String(src) })} /><Field label="Mô tả thay thế" value={media.alt} onChange={(alt) => onChange({ ...media, alt: String(alt) })} /></div><label className="mt-3 inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-lg border border-line bg-sheet px-4 text-sm font-semibold hover:border-rose"><Upload className="size-4" aria-hidden="true" />{uploading ? 'Đang upload…' : 'Chọn ảnh hoặc video'}<input type="file" accept="image/*,video/mp4,video/webm,video/quicktime" onChange={upload} disabled={uploading} className="sr-only" /></label>{error && <p role="alert" className="mt-2 text-sm text-red-700">{error}</p>}</div>
