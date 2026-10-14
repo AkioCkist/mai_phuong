@@ -68,7 +68,7 @@ pnpm build
 pnpm start
 ```
 
-## Tác giả
+## Bạn
 
 **Hồ Mai Phương — Calliope**
 
